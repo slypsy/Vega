@@ -5,8 +5,12 @@ $br-small: 768px;
 $br-medium: 992px;
 $br-large: 1180px;
 
-$blue: #0050ff;
-$dark-blue: #0040cc;
+
+
+$blue-ribbon: #0050ff;
+$science-blue: #0040cc;
+$downriver: #081f3f;
+$white: #ffffff;
 $susy: (
         flow: ltr, // ltr | rtl
         output: float, // float | isolate
@@ -42,3 +46,5 @@ $susy: (
 
 
 @import "header";
+@import "fonts";
+@import "promo";

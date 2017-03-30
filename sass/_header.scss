@@ -1,44 +1,78 @@
+.header-width{
+  width: 100%;
+
+}
 header{
-  padding-top: 25px;
+  position: relative;
+  height: 140px;
 }
 .user-type-nav {
-  display: inline;
-
-  float: right;
-
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  z-index: 333;
   a {
-    margin-left: 25px;
+    margin-left: 27px;
     text-decoration: none;
-    color: #081f3f;
-    font-family:sans-serif;
-  }
-  a:hover{
-    color: $blue;
+    color: $downriver;
+    font-family: museosans500;
+    font-size: 12px;
+    line-height: 12px;
+    &:hover {
+      color: $blue-ribbon;
+    }
   }
 }
 .logo {
-
+  position: absolute;
+  line-height: 140px;
+  z-index: 1;
 }
 nav {
+  width: 100%;
   text-align: center;
-  li{
+  position: absolute;
+  line-height: 140px;
+  li {
     display: inline;
-    a{
+    a {
+      position: relative;
       text-decoration: none;
       margin-right: 30px;
-      padding-bottom: 50px;
-    }
-    a:hover{
-      border-bottom: 5px solid $blue;
+      padding-bottom: 61px;
+      font-family: museosans900;
+      color: $downriver;
+      .hover{
+        display: none;
+      }
+      &:visited {
+        color: $downriver;
+      }
+      &:hover, &.active {
+        .hover {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 5px;
+          border-top-left-radius: 2px;
+          border-top-right-radius: 2px;
+          background-color: #0050ff;
 
+        }
+      }
     }
   }
 }
 .register {
-  float: right;
-  padding-bottom: 15px;
-  .btn-log{
-    background-color: $blue;
+  text-align: end;
+  position: absolute;
+  right: 0;
+  line-height: 140px;
+  .btn {
+    background-color: $blue-ribbon;
     height: 40px;
     width: 80px;
     display: inline-block;
@@ -46,25 +80,18 @@ nav {
     line-height: 40px;
     text-align: center;
     color: #fff;
+    font-family: museosans700;
+    font-size: 13px;
+    &:hover {
+      background-color: $science-blue;
+    }
+  }
+  .btn-log{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
-  .btn-log:hover {
-    background-color: $dark-blue;
-  }
   .btn-sign{
-    background-color: $blue;
-    height: 40px;
-    width: 80px;
-    display: inline-block;
-    text-decoration: none;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  .btn-sign:hover {
-    background-color: $dark-blue;
   }
 }

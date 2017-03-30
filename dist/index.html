@@ -7,42 +7,77 @@
     <title></title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/vendor/jquery-focuspoint-master/css/focuspoint.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="user-type-nav">
-                <a href="#">Patients</a>
-                <a href="#">Clinicians</a>
-                <a href="#">Business</a>
-            </div>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt=""/>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">What we do</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="register">
-                <a class="btn-log"href="">Log in</a>
-                <a class="btn-sign"href="">Sign up</a>
-            </div>
-        </header>
-    </div>
 
+    <div class="header-width">
+        <div class="wrapper">
+            <header>
+                <div class="user-type-nav">
+                    <a href="#">Patients</a>
+                    <a href="#">Clinicians</a>
+                    <a href="#">Business</a>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt=""/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                What we do
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                About
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Pricing
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Contact
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="register">
+                    <a class="btn btn-log" href="">Log in</a>
+                    <a class="btn btn-sign" href="">Sign up</a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <section>
+        <div class="focuspoint"
+             data-focus-x="0"
+             data-focus-y="0"
+             data-image-w="1639"
+             data-image-h="740">
+            <img src="../img/header-photo.jpg" alt="" />
+        </div>
+    </section>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous">
+    </script>
+    <script src="vendor/jquery-focuspoint-master/js/jquery.focuspoint.min.js"></script>
+    <script>
+        $(function () {
+            $('.focuspoint').focusPoint();
+        })
+    </script>
 </body>
 </html>
