@@ -1,0 +1,44 @@
+@import "susy";
+@import "breakpoint";
+
+$br-small: 768px;
+$br-medium: 992px;
+$br-large: 1180px;
+
+$blue: #0050ff;
+$dark-blue: #0040cc;
+$susy: (
+        flow: ltr, // ltr | rtl
+        output: float, // float | isolate
+        math: static, // fluid | static (requires column-width)
+        column-width: 80px, // false | value
+        container: auto, // length or % | auto
+        container-position: center, // left | center | right | <length> [*2] (grid padding)
+        last-flow: to,
+        columns: 12,
+        gutters: 1/4,
+        gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
+        global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
+        debug: (image: show)
+);
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+
+    @include show-grid(12);
+}
+.wrapper {
+  @include breakpoint($br-small) {
+    @include container(720px);
+  }
+  @include breakpoint($br-medium) {
+    @include container(940px);
+  }
+  @include breakpoint($br-large) {
+    @include container(1180px);
+  }
+}
+
+
+@import "header";
