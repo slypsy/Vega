@@ -1,16 +1,19 @@
 @import "susy";
 @import "breakpoint";
 
-$br-small: 768px;
-$br-medium: 992px;
+$br-small: 640px;
+$br-medium: 770px;
 $br-large: 1180px;
 
 
-
+/*---------colors---------*/
 $blue-ribbon: #0050ff;
 $science-blue: #0040cc;
 $downriver: #081f3f;
 $white: #ffffff;
+$alabaster: #fafafa;
+
+
 $susy: (
         flow: ltr, // ltr | rtl
         output: float, // float | isolate
@@ -32,19 +35,50 @@ $susy: (
 
     @include show-grid(12);
 }
-.wrapper {
+.container {
   @include breakpoint($br-small) {
-    @include container(720px);
+    @include container(640px);
   }
   @include breakpoint($br-medium) {
-    @include container(940px);
+    @include container(720px);
   }
   @include breakpoint($br-large) {
     @include container(1180px);
   }
 }
 
+@include breakpoint($br-large){
+  .column-1-4, .column-2-4, .column-3-4, .column-4-4{
+    @include span(3 of 12);
+  }
+  .column-4-4{
+    @include last;
+  }
+}
+@include breakpoint($br-medium){
+  .column-1-4, .column-2-4, .column-3-4, .column-4-4{
+    @include span(3 of 12);
+  }
+  .column-4-4{
+    @include last;
+  }
+}
+
+
+
+
+@include breakpoint($br-small){
+  .column-1-2,.column-2-2{
+    @include span(6);
+  }
+  .column-2-2{
+    @include last;
+  }
+}
+
+
 
 @import "header";
 @import "fonts";
 @import "promo";
+@import "features";

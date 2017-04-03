@@ -1,7 +1,27 @@
+.presentation {
+  position: relative;
+}
 .focuspoint {
   height: 485px;
   background-color: black;
   img {
     opacity: 0.5;
+  }
+}
+.text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  h1{
+    font-family: museosans100;
+    font-size: 63px;
+    color: $white;
+  }
+  p{
+    color: $white;
+    font-family: museosans100;
+    font-size: 22px;
+
   }
 }
