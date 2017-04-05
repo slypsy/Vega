@@ -12,13 +12,16 @@ $science-blue: #0040cc;
 $downriver: #081f3f;
 $white: #ffffff;
 $alabaster: #fafafa;
+$alto: #d9d9d9;
+$wild-sand: #f6f6f6;
+$gray-chateau: #9ea2aa;
 
 
 $susy: (
         flow: ltr, // ltr | rtl
         output: float, // float | isolate
-        math: static, // fluid | static (requires column-width)
-        column-width: 80px, // false | value
+        math: fluid, // fluid | static (requires column-width)
+        column-width: false,//80px, // false | value
         container: auto, // length or % | auto
         container-position: center, // left | center | right | <length> [*2] (grid padding)
         last-flow: to,
@@ -26,16 +29,11 @@ $susy: (
         gutters: 1/4,
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
-        debug: (image: show)
+        debug: (image: hide)
 );
 
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-
-    @include show-grid(12);
-}
 .container {
+  @include show-grid(12);
   @include breakpoint($br-small) {
     @include container(640px);
   }
@@ -67,14 +65,7 @@ $susy: (
 
 
 
-@include breakpoint($br-small){
-  .column-1-2,.column-2-2{
-    @include span(6);
-  }
-  .column-2-2{
-    @include last;
-  }
-}
+
 
 
 
@@ -82,3 +73,4 @@ $susy: (
 @import "fonts";
 @import "promo";
 @import "features";
+@import "tabs";

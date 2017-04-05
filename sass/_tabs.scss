@@ -1,0 +1,53 @@
+.pricing {
+  border-top: 1px solid $alto;
+  margin-top: 140px;
+
+  .container{
+    position: relative;
+    top: -93px;
+  }
+}
+.nav-tabs {
+  .tab {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 3px;
+    &:last-child{
+      padding-right: 0;
+      padding-left: 3px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $gray-chateau;
+      font-family: museosans300;
+      font-size: 25px;
+      background-color: $wild-sand;
+      padding: 37px 0 30px;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+      border-top: 1px solid $alto;
+      border-left: 1px solid $alto;
+      border-right: 1px solid $alto;
+      position: relative;
+      z-index: -1;
+
+      &.active {
+        color: $blue-ribbon;
+        background-color: $white;
+        z-index: 0;
+      }
+    }
+  }
+}
+.tab-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+
+}

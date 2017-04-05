@@ -10,52 +10,7 @@
     <link rel="stylesheet" href="/vendor/jquery-focuspoint-master/css/focuspoint.css">
 </head>
 <body>
-    <div class="header-width">
-        <div class="container">
-            <header>
-                <div class="user-type-nav">
-                    <a href="#">Patients</a>
-                    <a href="#">Clinicians</a>
-                    <a href="#">Business</a>
-                </div>
-                <div class="logo">
-                    <img src="../img/logo.png" alt=""/>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a class="active" href="#">
-                                What we do
-                                <div class="hover"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                About
-                                <div class="hover"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Pricing
-                                <div class="hover"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Contact
-                                <div class="hover"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="register">
-                    <a class="btn btn-log" href="">Log in</a>
-                    <a class="btn btn-sign" href="">Sign up</a>
-                </div>
-            </header>
-        </div>
-    </div>
+  @import "header.html"
     <section class="presentation">
         <div class="focuspoint"
              data-focus-x="0"
@@ -94,6 +49,22 @@
             </div>
         </div>
     </section>
+    <section class="pricing">
+        <div class="container">
+            <ul class="nav-tabs">
+                <li class="tab"><a class="active" href="#lorem-plans">Lorem plans</a></li>
+                <li class="tab"><a href="#ipsum-plans">Ipsum plans</a></li>
+            </ul>
+            <div class="tabs">
+                <div class="tab-content active" id="lorem-plans">
+                    <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+                </div>
+                <div class="tab-content" id="ipsum-plans">
+                    <p>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -103,6 +74,12 @@
     <script>
         $(function () {
             $('.focuspoint').focusPoint();
+            $('.nav-tabs .tab').click(function () {
+                $('.nav-tabs a').removeClass('active');
+                $('.tabs .tab-content').removeClass('active');
+                $(this).find(' > a').addClass('active');
+                $($(this).find(' > a').attr('href')).addClass('active');
+            });
         })
     </script>
 </body>

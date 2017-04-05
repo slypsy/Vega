@@ -1,23 +1,9 @@
 /*---------colors---------*/
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 100px;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
-
 @media (min-width: 640px) {
   .container {
-    width: 640px;
+    max-width: 640px;
     margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 100px;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top; }
+    margin-right: auto; }
     .container:after {
       content: " ";
       display: block;
@@ -25,14 +11,9 @@
 
 @media (min-width: 770px) {
   .container {
-    width: 720px;
+    max-width: 720px;
     margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 100px;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top; }
+    margin-right: auto; }
     .container:after {
       content: " ";
       display: block;
@@ -40,14 +21,9 @@
 
 @media (min-width: 1180px) {
   .container {
-    width: 1180px;
+    max-width: 1180px;
     margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 100px;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top; }
+    margin-right: auto; }
     .container:after {
       content: " ";
       display: block;
@@ -55,28 +31,19 @@
 
 @media (min-width: 1180px) {
   .column-1-4, .column-2-4, .column-3-4, .column-4-4 {
-    width: 280px;
+    width: 23.72881%;
     float: left;
-    margin-right: 20px; }
+    margin-right: 1.69492%; }
   .column-4-4 {
     float: right;
     margin-right: 0; } }
 
 @media (min-width: 770px) {
   .column-1-4, .column-2-4, .column-3-4, .column-4-4 {
-    width: 280px;
+    width: 23.72881%;
     float: left;
-    margin-right: 20px; }
+    margin-right: 1.69492%; }
   .column-4-4 {
-    float: right;
-    margin-right: 0; } }
-
-@media (min-width: 640px) {
-  .column-1-2, .column-2-2 {
-    width: 580px;
-    float: left;
-    margin-right: 20px; }
-  .column-2-2 {
     float: right;
     margin-right: 0; } }
 
@@ -205,17 +172,21 @@ nav {
 
 .text {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   text-align: center; }
   .text h1 {
     font-family: museosans100;
     font-size: 63px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin: 20px 0 40px;
+    letter-spacing: -3px; }
   .text p {
     color: #ffffff;
-    font-family: museosans100;
-    font-size: 22px; }
+    font-family: museosans300;
+    font-size: 22px;
+    line-height: 34px; }
 
 .features {
   background-color: #fafafa; }
@@ -223,11 +194,53 @@ nav {
 .column {
   text-align: center;
   color: #081f3f;
-  padding-top: 43px;
-  padding-bottom: 60px; }
+  margin-top: 40px; }
   .column img {
     color: #0050ff; }
   .column p {
     font-family: museosans100;
     font-size: 18px;
-    padding-top: 20px; }
+    margin: 20px 0 50px;
+    line-height: 30px; }
+
+.pricing {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 140px; }
+  .pricing .container {
+    position: relative;
+    top: -93px; }
+
+.nav-tabs .tab {
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-right: 3px; }
+  .nav-tabs .tab:last-child {
+    padding-right: 0;
+    padding-left: 3px; }
+  .nav-tabs .tab a {
+    display: block;
+    text-decoration: none;
+    color: #9ea2aa;
+    font-family: museosans300;
+    font-size: 25px;
+    background-color: #f6f6f6;
+    padding: 37px 0 30px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+    z-index: -1; }
+    .nav-tabs .tab a.active {
+      color: #0050ff;
+      background-color: #ffffff;
+      z-index: 0; }
+
+.tab-content {
+  display: none; }
+  .tab-content.active {
+    display: block; }

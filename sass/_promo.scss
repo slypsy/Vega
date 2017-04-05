@@ -10,18 +10,22 @@
 }
 .text {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform:translateY(-50%);
   width: 100%;
   text-align: center;
   h1{
     font-family: museosans100;
     font-size: 63px;
     color: $white;
+    margin: 20px 0 40px;
+    letter-spacing: -3px;
   }
   p{
     color: $white;
-    font-family: museosans100;
+    font-family: museosans300;
     font-size: 22px;
+    line-height: 34px;
 
   }
 }

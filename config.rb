@@ -1,5 +1,5 @@
 require "susy"
-require "braekpoint"
+require "breakpoint"
 
 
 project_type = :stand_alone

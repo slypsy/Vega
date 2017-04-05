@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 // });
 
 gulp.task('html-import', function () {
-    return gulp.src('./src/*.html')
+    return gulp.src('./src/**/*.html')
         .pipe(htmlImport('./src/components/'))
         .pipe(gulp.dest('dist'));
 });
