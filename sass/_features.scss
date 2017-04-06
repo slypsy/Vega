@@ -1,18 +1,20 @@
-.features{
+.features {
   background-color: $alabaster;
 }
-.column{
-  text-align: center;
-  color: $downriver;
-  margin-top: 40px;
-  img {
-    color: $blue-ribbon;
-  }
-  p{
-    font-family: museosans100;
-    font-size: 18px;
-    margin: 20px 0 50px;
-    line-height: 30px;
+.column {
+  @include breakpoint($br-large) {
+    text-align: center;
+    color: $downriver;
+    margin-top: 40px;
+    img {
+      color: $blue-ribbon;
+    }
+    p {
+      font-family: museosans100;
+      font-size: 18px;
+      margin: 20px 0 50px;
+      line-height: 30px;
 
+    }
   }
 }

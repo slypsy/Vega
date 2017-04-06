@@ -1,7 +1,7 @@
 /*---------colors---------*/
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 640px;
+    max-width: 270px;
     margin-left: auto;
     margin-right: auto; }
     .container:after {
@@ -163,45 +163,89 @@ nav {
 
 .presentation {
   position: relative; }
+  @media (min-width: 1180px) {
+    .presentation {
+      position: relative; } }
 
 .focuspoint {
-  height: 485px;
-  background-color: black; }
+  height: 198px;
+  background-color: black;
+  z-index: -1; }
   .focuspoint img {
     opacity: 0.5; }
+  @media (min-width: 770px) {
+    .focuspoint {
+      height: 360px; } }
+  @media (min-width: 1180px) {
+    .focuspoint {
+      height: 482px; } }
 
 .text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
   text-align: center; }
+  .text .family-mob {
+    display: block;
+    margin: auto; }
+  .text .family {
+    display: none; }
   .text h1 {
     font-family: museosans100;
-    font-size: 63px;
-    color: #ffffff;
-    margin: 20px 0 40px;
-    letter-spacing: -3px; }
+    color: #081f3f;
+    font-size: 25px;
+    margin: 23px 0 20px; }
   .text p {
-    color: #ffffff;
     font-family: museosans300;
-    font-size: 22px;
-    line-height: 34px; }
+    line-height: 25px;
+    margin-bottom: 25px; }
+  @media (min-width: 770px) {
+    .text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center; }
+      .text .family-mob {
+        display: none; }
+      .text .family {
+        display: block;
+        margin: auto;
+        width: 60px; }
+      .text h1 {
+        color: #ffffff;
+        font-size: 40px;
+        word-spacing: -5px;
+        margin: 30px 0 40px; }
+      .text p {
+        color: #ffffff;
+        padding-left: 25%;
+        padding-right: 25%; } }
+  @media (min-width: 1180px) {
+    .text .family {
+      width: 80px; }
+    .text h1 {
+      font-size: 63px;
+      margin: 20px 0 40px;
+      letter-spacing: -3px; }
+    .text p {
+      font-family: museosans300;
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 0; } }
 
 .features {
   background-color: #fafafa; }
 
-.column {
-  text-align: center;
-  color: #081f3f;
-  margin-top: 40px; }
-  .column img {
-    color: #0050ff; }
-  .column p {
-    font-family: museosans100;
-    font-size: 18px;
-    margin: 20px 0 50px;
-    line-height: 30px; }
+@media (min-width: 1180px) {
+  .column {
+    text-align: center;
+    color: #081f3f;
+    margin-top: 40px; }
+    .column img {
+      color: #0050ff; }
+    .column p {
+      font-family: museosans100;
+      font-size: 18px;
+      margin: 20px 0 50px;
+      line-height: 30px; } }
 
 .pricing {
   border-top: 1px solid #d9d9d9;
@@ -244,3 +288,7 @@ nav {
   display: none; }
   .tab-content.active {
     display: block; }
+  .tab-content .price-1 {
+    display: inline-block;
+    border: 1px solid indianred;
+    border-radius: 5px; }

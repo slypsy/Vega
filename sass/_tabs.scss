@@ -49,5 +49,9 @@
   &.active {
     display: block;
   }
-
+  .price-1 {
+    display: inline-block;
+    border: 1px solid indianred;
+    border-radius: 5px;
+  }
 }

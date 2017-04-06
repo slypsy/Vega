@@ -1,7 +1,7 @@
 @import "susy";
 @import "breakpoint";
 
-$br-small: 640px;
+$br-small: 320px;
 $br-medium: 770px;
 $br-large: 1180px;
 
@@ -35,7 +35,7 @@ $susy: (
 .container {
   @include show-grid(12);
   @include breakpoint($br-small) {
-    @include container(640px);
+    @include container(270px);
   }
   @include breakpoint($br-medium) {
     @include container(720px);
