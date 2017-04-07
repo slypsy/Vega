@@ -1,19 +1,58 @@
 .features {
   background-color: $alabaster;
+  padding: 40px 0 15px;
+  @include breakpoint($br-medium) {
+    padding: 30px 0;
+    border-bottom: 1px solid #efefef;
+  }
+  @include breakpoint($br-large) {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 .column {
+  text-align: left;
+  @include breakpoint($br-medium) {
+    text-align: center;
+    color: $downriver;
+
+
+  }
   @include breakpoint($br-large) {
     text-align: center;
     color: $downriver;
     margin-top: 40px;
-    img {
-      color: $blue-ribbon;
-    }
+    margin-bottom: 0;
+  }
     p {
-      font-family: museosans100;
+    font-family: museosans300;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    @include breakpoint($br-medium) {
+      margin: 0;
+    }
+    @include breakpoint($br-large) {
       font-size: 18px;
       margin: 20px 0 50px;
       line-height: 30px;
+    }
+  }
+
+  img {
+    float: left;
+    width: 34px;
+    margin-right: 20px;
+    @include breakpoint($br-medium) {
+      float: none;
+      margin-right: 0;
+      width: auto;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+    @include breakpoint($br-large) {
+      float: none;
+      margin-bottom: 0;
 
     }
   }

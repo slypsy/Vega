@@ -1,10 +1,23 @@
 .pricing {
   border-top: 1px solid $alto;
-  margin-top: 140px;
+  margin-top: 70px;
+  @include breakpoint($br-medium) {
+    margin-top: 115px;
+  }
+  @include breakpoint($br-large){
+    margin-top: 140px;
+  }
 
-  .container{
+  .container {
     position: relative;
-    top: -93px;
+    top: -43px;
+    @include breakpoint($br-medium) {
+      top: -65px;
+    }
+    @include breakpoint($br-large) {
+      position: relative;
+      top: -93px;
+    }
   }
 }
 .nav-tabs {
@@ -22,12 +35,10 @@
 
     a {
       display: block;
+      font-size: 14px;
       text-decoration: none;
-      color: $gray-chateau;
-      font-family: museosans300;
-      font-size: 25px;
       background-color: $wild-sand;
-      padding: 37px 0 30px;
+      padding: 15px 0 13px;
       border-top-right-radius: 9px;
       border-top-left-radius: 9px;
       border-top: 1px solid $alto;
@@ -35,12 +46,23 @@
       border-right: 1px solid $alto;
       position: relative;
       z-index: -1;
-
+      font-family: museosans300;
+      color: $gray-chateau;
       &.active {
         color: $blue-ribbon;
         background-color: $white;
         z-index: 0;
       }
+      @include breakpoint($br-medium) {
+        font-size: 18px;
+        padding: 23px 0;
+      }
+      @include breakpoint($br-large){
+        font-size: 25px;
+        padding: 37px 0 30px;
+      }
+
+
     }
   }
 }
@@ -53,5 +75,9 @@
     display: inline-block;
     border: 1px solid indianred;
     border-radius: 5px;
+    p {
+      text-align: center;
+    }
+    
   }
 }
