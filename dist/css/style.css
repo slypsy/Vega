@@ -346,9 +346,29 @@ nav {
   display: none; }
   .tab-content.active {
     display: block; }
-  .tab-content .price-1 {
+  .tab-content .price-1, .tab-content .price-2, .tab-content .price-3 {
     display: inline-block;
-    border: 1px solid indianred;
-    border-radius: 5px; }
-    .tab-content .price-1 p {
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 50px #888888;
+    margin-top: 40px; }
+    .tab-content .price-1 p, .tab-content .price-2 p, .tab-content .price-3 p {
       text-align: center; }
+    .tab-content .price-1 .plan, .tab-content .price-2 .plan, .tab-content .price-3 .plan {
+      color: #ffffff;
+      background-color: #0050ff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-family: museosans700;
+      font-size: 14px;
+      padding: 15px 0; }
+    .tab-content .price-1 .price, .tab-content .price-2 .price, .tab-content .price-3 .price {
+      margin-top: 32px;
+      color: #0050ff;
+      font-family: museosans100; }
+      .tab-content .price-1 .price span, .tab-content .price-2 .price span, .tab-content .price-3 .price span {
+        font-size: 48px; }
+
+.button-blue a {
+  text-decoration: none; }

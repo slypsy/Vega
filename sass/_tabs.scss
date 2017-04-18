@@ -7,7 +7,6 @@
   @include breakpoint($br-large){
     margin-top: 140px;
   }
-
   .container {
     position: relative;
     top: -43px;
@@ -32,7 +31,6 @@
       padding-right: 0;
       padding-left: 3px;
     }
-
     a {
       display: block;
       font-size: 14px;
@@ -61,8 +59,6 @@
         font-size: 25px;
         padding: 37px 0 30px;
       }
-
-
     }
   }
 }
@@ -71,13 +67,37 @@
   &.active {
     display: block;
   }
-  .price-1 {
+  .price-1, .price-2, .price-3 {
     display: inline-block;
-    border: 1px solid indianred;
     border-radius: 5px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 10px 10px 50px #888888;
+    margin-top: 40px;
     p {
       text-align: center;
     }
-    
+    .plan {
+      color: $white;
+      background-color: $blue-ribbon;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-family: museosans700;
+      font-size: 14px;
+      padding: 15px 0;
+    }
+    .price {
+      margin-top: 32px;
+      color: $blue-ribbon;
+      font-family: museosans100;
+       span {
+        font-size: 48px;
+      }
+    }
+  }
+}
+.button-blue {
+  a{
+    text-decoration: none;
   }
 }
