@@ -38,7 +38,7 @@ $susy: (
     @include container(270px);
   }
   @include breakpoint($br-medium) {
-    @include container(720px);
+    @include container(650px);
   }
   @include breakpoint($br-large) {
     @include container(1180px);
@@ -62,7 +62,11 @@ $susy: (
   }
 }
 
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
@@ -74,3 +78,5 @@ $susy: (
 @import "promo";
 @import "features";
 @import "tabs";
+@import "prices";
+@import "story";

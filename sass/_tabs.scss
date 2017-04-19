@@ -9,13 +9,13 @@
   }
   .container {
     position: relative;
-    top: -43px;
+    top: -39px;
     @include breakpoint($br-medium) {
       top: -65px;
     }
     @include breakpoint($br-large) {
       position: relative;
-      top: -93px;
+      top: -92px;
     }
   }
 }
@@ -36,7 +36,7 @@
       font-size: 14px;
       text-decoration: none;
       background-color: $wild-sand;
-      padding: 15px 0 13px;
+      line-height: 38px;
       border-top-right-radius: 9px;
       border-top-left-radius: 9px;
       border-top: 1px solid $alto;
@@ -53,11 +53,11 @@
       }
       @include breakpoint($br-medium) {
         font-size: 18px;
-        padding: 23px 0;
+        line-height: 64px;
       }
       @include breakpoint($br-large){
         font-size: 25px;
-        padding: 37px 0 30px;
+        line-height: 91px;
       }
     }
   }
@@ -66,38 +66,5 @@
   display: none;
   &.active {
     display: block;
-  }
-  .price-1, .price-2, .price-3 {
-    display: inline-block;
-    border-radius: 5px;
-    width: 100%;
-    background-color: $white;
-    box-shadow: 10px 10px 50px #888888;
-    margin-top: 40px;
-    p {
-      text-align: center;
-    }
-    .plan {
-      color: $white;
-      background-color: $blue-ribbon;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      font-family: museosans700;
-      font-size: 14px;
-      padding: 15px 0;
-    }
-    .price {
-      margin-top: 32px;
-      color: $blue-ribbon;
-      font-family: museosans100;
-       span {
-        font-size: 48px;
-      }
-    }
-  }
-}
-.button-blue {
-  a{
-    text-decoration: none;
   }
 }

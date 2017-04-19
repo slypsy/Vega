@@ -11,7 +11,7 @@
 
 @media (min-width: 770px) {
   .container {
-    max-width: 720px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto; }
     .container:after {
@@ -46,6 +46,11 @@
   .column-4-4 {
     float: right;
     margin-right: 0; } }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .header-width {
   width: 100%; }
@@ -295,14 +300,14 @@ nav {
       margin-top: 140px; } }
   .pricing .container {
     position: relative;
-    top: -43px; }
+    top: -39px; }
     @media (min-width: 770px) {
       .pricing .container {
         top: -65px; } }
     @media (min-width: 1180px) {
       .pricing .container {
         position: relative;
-        top: -93px; } }
+        top: -92px; } }
 
 .nav-tabs .tab {
   display: block;
@@ -319,7 +324,7 @@ nav {
     font-size: 14px;
     text-decoration: none;
     background-color: #f6f6f6;
-    padding: 15px 0 13px;
+    line-height: 38px;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
     border-top: 1px solid #d9d9d9;
@@ -336,39 +341,174 @@ nav {
     @media (min-width: 770px) {
       .nav-tabs .tab a {
         font-size: 18px;
-        padding: 23px 0; } }
+        line-height: 64px; } }
     @media (min-width: 1180px) {
       .nav-tabs .tab a {
         font-size: 25px;
-        padding: 37px 0 30px; } }
+        line-height: 91px; } }
 
 .tab-content {
   display: none; }
   .tab-content.active {
     display: block; }
-  .tab-content .price-1, .tab-content .price-2, .tab-content .price-3 {
-    display: inline-block;
-    border-radius: 5px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 50px #888888;
-    margin-top: 40px; }
-    .tab-content .price-1 p, .tab-content .price-2 p, .tab-content .price-3 p {
-      text-align: center; }
-    .tab-content .price-1 .plan, .tab-content .price-2 .plan, .tab-content .price-3 .plan {
-      color: #ffffff;
-      background-color: #0050ff;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      font-family: museosans700;
-      font-size: 14px;
-      padding: 15px 0; }
-    .tab-content .price-1 .price, .tab-content .price-2 .price, .tab-content .price-3 .price {
-      margin-top: 32px;
-      color: #0050ff;
-      font-family: museosans100; }
-      .tab-content .price-1 .price span, .tab-content .price-2 .price span, .tab-content .price-3 .price span {
-        font-size: 48px; }
 
-.button-blue a {
-  text-decoration: none; }
+.prices {
+  display: inline-block;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 50px #d0d0d0;
+  margin-top: 40px;
+  position: relative; }
+  @media (min-width: 770px) {
+    .prices {
+      width: 70%;
+      margin: 50px auto;
+      display: block;
+      border-radius: 10px; } }
+  @media (min-width: 1180px) {
+    .prices {
+      width: 33%;
+      display: inline-block;
+      position: absolute;
+      margin-top: 102px; } }
+  @media (min-width: 1180px) {
+    .prices.first {
+      position: relative; } }
+  @media (min-width: 1180px) {
+    .prices.last {
+      right: 0; } }
+  .prices.best {
+    z-index: 3; }
+    @media (min-width: 1180px) {
+      .prices.best {
+        margin-top: 80px;
+        width: 440px;
+        left: 370px; } }
+    .prices.best .plan {
+      background-color: #78c07c; }
+      @media (min-width: 1180px) {
+        .prices.best .plan {
+          line-height: 90px; } }
+    .prices.best .price {
+      color: #78c07c; }
+  .prices p {
+    text-align: center;
+    font-family: museosans700;
+    font-size: 14px; }
+  .prices .plan {
+    color: #ffffff;
+    background-color: #0050ff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: museosans700;
+    font-size: 14px;
+    line-height: 41px; }
+    @media (min-width: 770px) {
+      .prices .plan {
+        font-size: 16px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        line-height: 53px; } }
+  .prices .best-value {
+    position: absolute;
+    top: 30px;
+    left: -11px;
+    background: url("/img/best-value.png") no-repeat;
+    height: 36px;
+    width: 88px; }
+    @media (min-width: 770px) {
+      .prices .best-value {
+        background: url("/img/best-value-2.png") no-repeat;
+        height: 58px;
+        width: 114px;
+        left: -38px; } }
+  .prices .price {
+    font-size: 48px;
+    font-family: museosans100;
+    margin-top: 32px;
+    text-align: center;
+    color: #0050ff; }
+    @media (min-width: 770px) {
+      .prices .price {
+        font-size: 60px; } }
+  .prices table {
+    margin: 32px auto 0 auto;
+    color: #0050ff;
+    font-family: museosans100; }
+    .prices table .pound {
+      font-size: 48px; }
+      @media (min-width: 770px) {
+        .prices table .pound {
+          font-size: 60px; } }
+    .prices table .month {
+      vertical-align: middle;
+      padding-left: 8px;
+      font-family: museosans300; }
+  .prices ul {
+    line-height: 30px;
+    font-family: museosans300;
+    font-size: 14px;
+    margin: 20px 0; }
+    @media (min-width: 770px) {
+      .prices ul {
+        font-size: 16px;
+        line-height: 38px;
+        padding-bottom: 38px; } }
+    .prices ul img {
+      margin: 0 15px 0 20px; }
+      @media (min-width: 770px) {
+        .prices ul img {
+          margin: 0 32px 0 55px; } }
+  .prices .checked {
+    color: #081f3f; }
+  .prices .unchecked {
+    color: #a4a8b0; }
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 40px; }
+  @media (min-width: 770px) {
+    .button-wrapper {
+      margin-top: 73px; } }
+  @media (min-width: 1180px) {
+    .button-wrapper {
+      margin-top: 46px; } }
+  .button-wrapper a {
+    color: #0050ff;
+    font-family: museosans700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 2px solid #0050ff;
+    border-radius: 20px;
+    padding: 10px 25px 10px 10px;
+    background: url("/img/icons/right-arrow.svg") no-repeat;
+    background-size: 7px;
+    background-position: 90% center; }
+    @media (min-width: 770px) {
+      .button-wrapper a {
+        font-size: 16px;
+        padding: 9px 35px 9px 23px; } }
+    .button-wrapper a:hover {
+      color: #081f3f;
+      border: 2px solid #081f3f;
+      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center; }
+
+.user-story {
+  background-color: #3149fb; }
+  .user-story h4 {
+    color: #ffffff;
+    font-family: museosans300;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 20px; }
+  .user-story p {
+    color: #ffffff;
+    font-family: museosans100;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0 10px; }

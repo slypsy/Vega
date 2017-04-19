@@ -1,0 +1,165 @@
+.prices {
+  display: inline-block;
+  border-radius: 5px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 0 50px #d0d0d0;
+  margin-top: 40px;
+  position: relative;
+  @include breakpoint($br-medium) {
+    width: 70%;
+    margin: 50px auto;
+    display: block;
+    border-radius: 10px;
+  }
+  @include breakpoint($br-large) {
+    width: 33%;
+    display: inline-block;
+    position: absolute;
+    margin-top: 102px;
+  }
+  &.first {
+    @include breakpoint($br-large) {
+      position: relative;
+    }
+  }
+  &.last {
+    @include breakpoint($br-large) {
+      right: 0;
+    }
+  }
+  &.best {
+    z-index: 3;
+    @include breakpoint($br-large) {
+      margin-top: 80px;
+      width: 440px;
+      left: 370px;
+    }
+    .plan {
+      background-color: #78c07c;
+      @include breakpoint($br-large) {
+        line-height: 90px;
+      }
+    }
+    .price{
+      color: #78c07c;
+    }
+  }
+  p {
+    text-align: center;
+    font-family: museosans700;
+    font-size: 14px;
+  }
+  .plan {
+    color: $white;
+    background-color: $blue-ribbon;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: museosans700;
+    font-size: 14px;
+    line-height: 41px;
+    @include breakpoint($br-medium) {
+      font-size: 16px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      line-height: 53px;
+    }
+  }
+  .best-value {
+    position: absolute;
+    top: 30px;
+    left: -11px;
+    background: url("/img/best-value.png") no-repeat;
+    height: 36px;
+    width: 88px;
+    @include breakpoint($br-medium) {
+      background: url("/img/best-value-2.png") no-repeat;
+      height: 58px;
+      width: 114px;
+      left: -38px;
+    }
+
+  }
+  .price {
+    font-size: 48px;
+    font-family: museosans100;
+    margin-top: 32px;
+    text-align: center;
+    color: $blue-ribbon;
+    @include breakpoint($br-medium) {
+      font-size: 60px;
+    }
+  }
+  table {
+    margin: 32px auto 0 auto;
+    color: $blue-ribbon;
+    font-family: museosans100;
+    .pound {
+      font-size: 48px;
+      @include breakpoint($br-medium) {
+        font-size: 60px;
+      }
+    }
+    .month {
+      vertical-align: middle;
+      padding-left: 8px;
+      font-family: museosans300;
+    }
+  }
+  ul {
+    line-height: 30px;
+    font-family: museosans300;
+    font-size: 14px;
+    margin: 20px 0;
+    @include breakpoint($br-medium) {
+      font-size: 16px;
+      line-height: 38px;
+      padding-bottom: 38px;
+    }
+    img {
+      margin: 0 15px 0 20px;
+      @include breakpoint($br-medium){
+        margin: 0 32px 0 55px;
+      }
+    }
+  }
+  .checked {
+    color: $downriver;
+  }
+  .unchecked {
+    color: #a4a8b0;
+  }
+}
+.button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  @include breakpoint($br-medium) {
+    margin-top: 73px
+  }
+  @include breakpoint($br-large) {
+    margin-top: 46px;
+  }
+  a {
+    color: $blue-ribbon;
+    font-family: museosans700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 2px solid $blue-ribbon;
+    border-radius: 20px;
+    padding: 10px 25px 10px 10px;
+    background: url("/img/icons/right-arrow.svg") no-repeat;
+    background-size: 7px;
+    background-position: 90% center;
+    @include breakpoint($br-medium) {
+      font-size: 16px;
+      padding: 9px 35px 9px 23px;
+    }
+    &:hover {
+      color: $downriver;
+      border:  2px solid $downriver;
+      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+    }
+  }
+}
