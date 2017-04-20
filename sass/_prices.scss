@@ -67,7 +67,7 @@
   }
   .best-value {
     position: absolute;
-    top: 30px;
+    top: 26px;
     left: -11px;
     background: url("/img/best-value.png") no-repeat;
     height: 36px;
@@ -76,9 +76,16 @@
       background: url("/img/best-value-2.png") no-repeat;
       height: 58px;
       width: 114px;
-      left: -38px;
+      left: -39px;
+      top: 34px;
     }
-
+    @include breakpoint($br-large) {
+      background: url("/img/best-value-3.png") no-repeat;
+      width: 156px;
+      height: 80px;
+      left: -52px;
+      top: 60px;
+    }
   }
   .price {
     font-size: 48px;

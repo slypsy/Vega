@@ -8,6 +8,7 @@ $br-large: 1180px;
 
 /*---------colors---------*/
 $blue-ribbon: #0050ff;
+$blue-ribbon-darker: #3149fb;
 $science-blue: #0040cc;
 $downriver: #081f3f;
 $white: #ffffff;
@@ -80,3 +81,4 @@ $susy: (
 @import "tabs";
 @import "prices";
 @import "story";
+@import "accordion";

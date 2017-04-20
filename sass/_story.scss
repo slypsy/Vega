@@ -1,19 +1,102 @@
-.user-story {
-  background-color: #3149fb;
-  h4 {
-    color: $white;
-    font-family: museosans300;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 40px 0 20px;
+.user-story-wrapper {
+  width: 100%;
+  .wrapper-table{
+    @include breakpoint($br-medium) {
+      display: table;
+    }
   }
-  p {
-    color: $white;
-    font-family: museosans100;
+  .wrapper-cell{
+    height: 265px;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    font-size: 20px;
-    line-height: 25px;
-    padding: 0 10px;
+    @include breakpoint($br-medium) {
+      height: 385px;
+    }
+    @include breakpoint($br-large) {
+      height: 650px;
+    }
+  }
+  .user-story {
+    background-color: $blue-ribbon-darker;
+    @include breakpoint($br-medium) {
+      width: 50%;
+      display: block;
+      float: left;
+    }
+    @include breakpoint($br-large) {
+      height: 650px;
+    }
+    h4 {
+      color: $white;
+      font-family: museosans300;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 20px;
+      }
+    }
+    p {
+      color: $white;
+      font-family: museosans100;
+      text-align: center;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 20px 10px 23px;
+      @include breakpoint($br-medium) {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -1px;
+        margin: 20px 53px 23px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 48px;
+        line-height: 60px;
+        margin: 20px 80px 23px;
+      }
+    }
+    .white-button {
+      display: inline-block;
+      text-decoration: none;
+      font-family: museosans700;
+      font-size: 12px;
+      color: $blue-ribbon-darker;
+      background: $white url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+      padding: 12px 40px 12px 20px;
+      border-radius: 20px;
+      &:hover {
+        background: #e6eeff url("/img/icons/right-arrow.svg") no-repeat;
+        background-size: 7px;
+        background-position: 90% center;
+      }
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+        padding: 12px 40px 10px 20px;
+      }
+      @include breakpoint($br-large) {
+        padding: 12px 47px 12px 20px;
+      }
+    }
+  }
+  .user-photo {
+    width: 100%;
+    background: url("/img/story-photo.jpg") no-repeat;
+    background-size: cover;
+    height: 230px;
+    @include breakpoint($br-medium) {
+      width: 50%;
+      display: block;
+      height: 385px;
+      float: right;
+    }
+    @include breakpoint($br-large) {
+      height: 650px;
+    }
   }
 }

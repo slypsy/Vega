@@ -412,7 +412,7 @@ nav {
         line-height: 53px; } }
   .prices .best-value {
     position: absolute;
-    top: 30px;
+    top: 26px;
     left: -11px;
     background: url("/img/best-value.png") no-repeat;
     height: 36px;
@@ -422,7 +422,15 @@ nav {
         background: url("/img/best-value-2.png") no-repeat;
         height: 58px;
         width: 114px;
-        left: -38px; } }
+        left: -39px;
+        top: 34px; } }
+    @media (min-width: 1180px) {
+      .prices .best-value {
+        background: url("/img/best-value-3.png") no-repeat;
+        width: 156px;
+        height: 80px;
+        left: -52px;
+        top: 60px; } }
   .prices .price {
     font-size: 48px;
     font-family: museosans100;
@@ -496,19 +504,121 @@ nav {
       background-size: 7px;
       background-position: 90% center; }
 
-.user-story {
-  background-color: #3149fb; }
-  .user-story h4 {
-    color: #ffffff;
-    font-family: museosans300;
-    font-size: 14px;
-    text-transform: uppercase;
+.user-story-wrapper {
+  width: 100%; }
+  @media (min-width: 770px) {
+    .user-story-wrapper .wrapper-table {
+      display: table; } }
+  .user-story-wrapper .wrapper-cell {
+    height: 265px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    @media (min-width: 770px) {
+      .user-story-wrapper .wrapper-cell {
+        height: 385px; } }
+    @media (min-width: 1180px) {
+      .user-story-wrapper .wrapper-cell {
+        height: 650px; } }
+  .user-story-wrapper .user-story {
+    background-color: #3149fb; }
+    @media (min-width: 770px) {
+      .user-story-wrapper .user-story {
+        width: 50%;
+        display: block;
+        float: left; } }
+    @media (min-width: 1180px) {
+      .user-story-wrapper .user-story {
+        height: 650px; } }
+    .user-story-wrapper .user-story h4 {
+      color: #ffffff;
+      font-family: museosans300;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (min-width: 770px) {
+        .user-story-wrapper .user-story h4 {
+          font-size: 16px; } }
+      @media (min-width: 1180px) {
+        .user-story-wrapper .user-story h4 {
+          font-size: 20px; } }
+    .user-story-wrapper .user-story p {
+      color: #ffffff;
+      font-family: museosans100;
+      text-align: center;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 20px 10px 23px; }
+      @media (min-width: 770px) {
+        .user-story-wrapper .user-story p {
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: -1px;
+          margin: 20px 53px 23px; } }
+      @media (min-width: 1180px) {
+        .user-story-wrapper .user-story p {
+          font-size: 48px;
+          line-height: 60px;
+          margin: 20px 80px 23px; } }
+    .user-story-wrapper .user-story .white-button {
+      display: inline-block;
+      text-decoration: none;
+      font-family: museosans700;
+      font-size: 12px;
+      color: #3149fb;
+      background: #ffffff url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+      padding: 12px 40px 12px 20px;
+      border-radius: 20px; }
+      .user-story-wrapper .user-story .white-button:hover {
+        background: #e6eeff url("/img/icons/right-arrow.svg") no-repeat;
+        background-size: 7px;
+        background-position: 90% center; }
+      @media (min-width: 770px) {
+        .user-story-wrapper .user-story .white-button {
+          font-size: 16px;
+          padding: 12px 40px 10px 20px; } }
+      @media (min-width: 1180px) {
+        .user-story-wrapper .user-story .white-button {
+          padding: 12px 47px 12px 20px; } }
+  .user-story-wrapper .user-photo {
+    width: 100%;
+    background: url("/img/story-photo.jpg") no-repeat;
+    background-size: cover;
+    height: 230px; }
+    @media (min-width: 770px) {
+      .user-story-wrapper .user-photo {
+        width: 50%;
+        display: block;
+        height: 385px;
+        float: right; } }
+    @media (min-width: 1180px) {
+      .user-story-wrapper .user-photo {
+        height: 650px; } }
+
+.notes {
+  text-align: center;
+  font-family: museosans100; }
+  @media (min-width: 1180px) {
+    .notes {
+      font-size: 50px;
+      line-height: 150px; } }
+
+#accordion {
+  border: 2px solid #e4e3e3;
+  border-radius: 10px; }
+  #accordion .accordion-button {
     text-align: center;
-    padding: 40px 0 20px; }
-  .user-story p {
-    color: #ffffff;
-    font-family: museosans100;
-    text-align: center;
-    font-size: 20px;
-    line-height: 25px;
-    padding: 0 10px; }
+    cursor: pointer;
+    line-height: 66px;
+    color: #0050ff;
+    font-family: museosans700;
+    font-size: 18px;
+    background: #ffffff url("/img/icons/accordion-arrow.svg") no-repeat;
+    background-size: 17px;
+    background-position: 97.5% center; }
+    #accordion .accordion-button:hover {
+      background-color: #f7faff; }
+  #accordion .accordion-content {
+    display: none; }

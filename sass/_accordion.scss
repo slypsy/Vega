@@ -1,0 +1,29 @@
+.notes {
+  text-align: center;
+  font-family: museosans100;
+  @include breakpoint($br-large) {
+    font-size: 50px;
+    line-height: 150px;
+  }
+}
+#accordion{
+  border: 2px solid #e4e3e3;
+  border-radius: 10px;
+  .accordion-button{
+    text-align: center;
+    cursor: pointer;
+    line-height: 66px;
+    color: $blue-ribbon;
+    font-family: museosans700;
+    font-size: 18px;
+    background: $white url("/img/icons/accordion-arrow.svg") no-repeat ;
+    background-size: 17px;
+    background-position: 97.5% center;
+    &:hover {
+      background-color: #f7faff;
+    }
+  }
+  .accordion-content{
+    display: none;
+  }
+}
