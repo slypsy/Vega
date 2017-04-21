@@ -615,10 +615,19 @@ nav {
     color: #0050ff;
     font-family: museosans700;
     font-size: 18px;
-    background: #ffffff url("/img/icons/accordion-arrow.svg") no-repeat;
-    background-size: 17px;
-    background-position: 97.5% center; }
+    border-bottom: 1px solid black; }
+    #accordion .accordion-button:last-of-type {
+      border-bottom: none; }
+    #accordion .accordion-button.active:last-of-type {
+      border-bottom: 1px solid black; }
     #accordion .accordion-button:hover {
       background-color: #f7faff; }
+    #accordion .accordion-button .arrow {
+      position: absolute;
+      right: 155px;
+      transition: 0.7s; }
   #accordion .accordion-content {
+    border-bottom: 1px solid black;
     display: none; }
+    #accordion .accordion-content:last-child {
+      border-bottom: none; }
