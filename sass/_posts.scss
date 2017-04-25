@@ -1,0 +1,62 @@
+.posts {
+  hr {
+    border: 1px solid #e4e3e3;;
+  }
+  .post {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      width: 100%;
+      font-family: museosans100;
+      @include breakpoint($br-medium) {
+        font-size: 36px;
+        width: 50%;
+      }
+      @include breakpoint($br-large) {
+        font-size: 48px;
+      }
+    }
+    p {
+      width: 100%;
+      font-family: museosans300;
+      font-size: 14px;
+      line-height: 25px;
+      @include breakpoint($br-medium) {
+        width: 50%;
+      }
+    }
+    img {
+      width: 100%;
+      @include breakpoint($br-medium) {
+        width: 50%;
+      }
+    }
+
+    .button-blue {
+      display: inline-block;
+      color: $blue-ribbon;
+      font-family: museosans700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 2px solid $blue-ribbon;
+      border-radius: 20px;
+      padding: 10px 25px 10px 10px;
+      background: url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+    }
+  }
+  .left {
+    img {
+      float: right;
+    }
+  }
+  .right {
+    img {
+      float: left;
+    }
+    h1, p {
+      float: right;
+    }
+  }
+}

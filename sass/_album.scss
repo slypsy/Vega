@@ -1,0 +1,82 @@
+.album {
+  .wrapper-table {
+    background-color: #2dc27a;
+    vertical-align: middle;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+    @include breakpoint($br-medium) {
+      height: 470px;
+      width: 350px;
+    }
+    @include breakpoint($br-large){
+      height: 470px;
+      width: 420px;
+    }
+    .wrapper-cell{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      height: 325px;
+      @include breakpoint($br-medium) {}
+      height: 470px;
+      img {
+        width: 40px;
+        margin-bottom: 15px;
+        @include breakpoint($br-medium) {
+          width: 60px;
+        }
+      }
+      h1 {
+        color: $white;
+        font-family: museosans100;
+        font-size: 22px;
+        @include breakpoint($br-medium) {
+          font-size: 30px;
+        }
+      }
+      p {
+        color: $white;
+        font-family: museosans300;
+        font-size: 14px;
+        line-height: 23px;
+        padding: 0 20px;
+        margin: 30px 0;
+        @include breakpoint($br-medium) {
+          font-size: 18px;
+          line-height: 31px;
+        }
+      }
+      .white-button {
+        display: inline-block;
+        text-decoration: none;
+        font-family: museosans700;
+        font-size: 16px;
+        color: #2dc27a;
+        background: #ffffff url(/img/icons/right-arrow-green.svg) no-repeat;
+        background-size: 7px;
+        background-position: 90% center;
+        padding: 12px 30px 12px 20px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .img-wrapper {
+    box-sizing: border-box;
+    .album-img {
+      box-sizing: border-box;
+      width: 50%;
+      display: inline-block;
+      float: left;
+      margin-top: 6px;
+      padding-right: 3px;
+      &:nth-child(2), &:nth-child(4){
+        padding-right: 0;
+        padding-left: 3px;
+      }
+      @include breakpoint($br-large){
+        width: 20%;
+      }
+    }
+  }
+}

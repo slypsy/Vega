@@ -251,40 +251,73 @@
             </p>
         </div>
     </div>
+    <div class="button-wrapper btn-blue">
+        <a href="">Lorem ipsum notes</a>
+    </div>
 </div>
+<section class="album">
+    <div class="container">
+        <div class="wrapper-table">
+            <div class="wrapper-cell">
+                <img src="../img/icons/icon-5.svg" alt=""/>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod
+                    tincidunt ut laoreet.
+                </p>
+                <a class="white-button" href="#">Read more</a>
+            </div>
+        </div>
+        <div class="img-wrapper">
+            <img class="album-img" src="../img/photo-1.png" alt="">
+            <img class="album-img" src="../img/photo-2.png" alt="">
+            <img class="album-img" src="../img/photo-3.png" alt="">
+            <img class="album-img" src="../img/photo-4.png" alt="">
+        </div>
+    </div>
+</section>
 <section class="posts">
-    <div class="post-1">
-        <h1>Post title</h1>
-        <img src="../img/post-1.png" alt=""/>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
-        <a class="button-blue" href="">Read more</a>
+    <hr>
+    <div class="container">
+        <div class="post left">
+            <h1>Our vision</h1>
+            <img src="../img/post-1.png" alt=""/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
     </div>
-    <div class="post-2">
-        <hr>
-        <h1>Post title</h1>
-        <img src="../img/post-2.png" alt=""/>
-        <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-        </p>
-        <a class="button-blue" href="">Read more</a>
+    <hr>
+    <div class="container">
+        <div class="post right">
+            <h1>Post title</h1>
+            <img src="../img/post-2.png" alt=""/>
+            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
     </div>
-    <div class="post-3">
-        <h1>Post title</h1>
-        <img src="../img/post-3.png" alt=""/>
-        <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-        </p>
-        <a class="button-blue" href="">Read more</a>
-        <hr>
+    <hr>
+    <div class="container">
+        <div class="post left">
+            <h1>Post title</h1>
+            <img src="../img/post-3.png" alt=""/>
+            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
     </div>
+    <hr>
 </section>
 <script src="/js/jquery-2.2.4.min.js"></script>
 <script src="vendor/jquery-focuspoint-master/js/jquery.focuspoint.min.js"></script>
@@ -301,14 +334,17 @@
         var accordionElements = $('.accordion-button');
         accordionElements.click(function() {
             var el = $(this);
+            var elOpened = el.hasClass('active');
             accordionElements.each(function () {
                 $(this).removeClass('active');
                 $(this).next().slideUp();
                 $(this).find('.arrow').css('transform', 'rotate(0deg)')
             });
-            el.addClass('active');
-            el.find('.arrow').css('transform', 'rotate(180deg)');
-            el.next().slideDown(700);
+            if (!elOpened) {
+                el.addClass('active');
+                el.find('.arrow').css('transform', 'rotate(180deg)');
+                el.next().slideDown(700);
+            }
         });
     })
 </script>
