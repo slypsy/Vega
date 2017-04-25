@@ -1,10 +1,14 @@
 .album {
+  }
   .wrapper-table {
     background-color: #2dc27a;
     vertical-align: middle;
+    display: table;
     margin: auto;
     position: relative;
     margin-bottom: 20px;
+    height: 325px;
+    width: 100%;
     @include breakpoint($br-medium) {
       height: 470px;
       width: 350px;
@@ -18,8 +22,11 @@
       vertical-align: middle;
       text-align: center;
       height: 325px;
-      @include breakpoint($br-medium) {}
-      height: 470px;
+      width: 275px;
+      @include breakpoint($br-medium) {
+        height: 470px;
+        width: 350px;
+      }
       img {
         width: 40px;
         margin-bottom: 15px;
@@ -62,21 +69,38 @@
     }
   }
   .img-wrapper {
-    box-sizing: border-box;
-    .album-img {
-      box-sizing: border-box;
-      width: 50%;
+    .album-photo {
       display: inline-block;
       float: left;
-      margin-top: 6px;
-      padding-right: 3px;
-      &:nth-child(2), &:nth-child(4){
-        padding-right: 0;
-        padding-left: 3px;
+      width: 135px;
+      height: 115px;
+      margin-top: 4px;
+      @include breakpoint($br-medium) {
+        width: 200px;
+        height: 230px;
       }
-      @include breakpoint($br-large){
-        width: 20%;
+      @include breakpoint($br-large) {
+        width: 272px;
       }
+    }
+    .first{
+      background: url("/img/photo-1.png") no-repeat;
+      background-size: cover;
+      margin-right: 4px;
+    }
+    .second {
+      background: url("/img/photo-2.png") no-repeat;
+      background-size: cover;
+
+    }
+    .third {
+      background: url("/img/photo-3.png") no-repeat;
+      background-size: cover;
+      margin-right: 4px;
+    }
+    .forth {
+      background: url("/img/photo-4.png") no-repeat;
+      background-size: cover;
     }
   }
 }
