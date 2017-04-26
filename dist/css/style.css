@@ -9,7 +9,7 @@
       display: block;
       clear: both; } }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .container {
     max-width: 650px;
     margin-left: auto;
@@ -38,7 +38,7 @@
     float: right;
     margin-right: 0; } }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .column-1-4, .column-2-4, .column-3-4, .column-4-4 {
     width: 23.72881%;
     float: left;
@@ -178,7 +178,7 @@ nav {
   z-index: -1; }
   .focuspoint img {
     opacity: 0.5; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .focuspoint {
       height: 360px; } }
   @media (min-width: 1180px) {
@@ -201,7 +201,7 @@ nav {
     font-family: museosans300;
     line-height: 25px;
     margin-bottom: 25px; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .text {
       position: absolute;
       top: 50%;
@@ -239,7 +239,7 @@ nav {
 .features {
   background-color: #fafafa;
   padding: 40px 0 15px; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .features {
       padding: 30px 0;
       border-bottom: 1px solid #efefef; } }
@@ -250,7 +250,7 @@ nav {
 
 .column {
   text-align: left; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .column {
       text-align: center;
       color: #081f3f; } }
@@ -265,7 +265,7 @@ nav {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 25px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .column p {
         margin: 0; } }
     @media (min-width: 1180px) {
@@ -277,7 +277,7 @@ nav {
     float: left;
     width: 34px;
     margin-right: 20px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .column img {
         float: none;
         margin-right: 0;
@@ -292,7 +292,7 @@ nav {
 .pricing {
   border-top: 1px solid #d9d9d9;
   margin-top: 70px; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .pricing {
       margin-top: 115px; } }
   @media (min-width: 1180px) {
@@ -301,7 +301,7 @@ nav {
   .pricing .container {
     position: relative;
     top: -39px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .pricing .container {
         top: -65px; } }
     @media (min-width: 1180px) {
@@ -338,7 +338,7 @@ nav {
       color: #0050ff;
       background-color: #ffffff;
       z-index: 0; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .nav-tabs .tab a {
         font-size: 18px;
         line-height: 64px; } }
@@ -360,7 +360,7 @@ nav {
   box-shadow: 0 0 50px #d0d0d0;
   margin-top: 40px;
   position: relative; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .prices {
       width: 70%;
       margin: 50px auto;
@@ -404,7 +404,7 @@ nav {
     font-family: museosans700;
     font-size: 14px;
     line-height: 41px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .prices .plan {
         font-size: 16px;
         border-top-left-radius: 10px;
@@ -417,7 +417,7 @@ nav {
     background: url("/img/best-value.png") no-repeat;
     height: 36px;
     width: 88px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .prices .best-value {
         background: url("/img/best-value-2.png") no-repeat;
         height: 58px;
@@ -437,7 +437,7 @@ nav {
     margin-top: 32px;
     text-align: center;
     color: #0050ff; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .prices .price {
         font-size: 60px; } }
   .prices table {
@@ -446,7 +446,7 @@ nav {
     font-family: museosans100; }
     .prices table .pound {
       font-size: 48px; }
-      @media (min-width: 770px) {
+      @media (min-width: 768px) {
         .prices table .pound {
           font-size: 60px; } }
     .prices table .month {
@@ -458,14 +458,14 @@ nav {
     font-family: museosans300;
     font-size: 14px;
     margin: 20px 0; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .prices ul {
         font-size: 16px;
         line-height: 38px;
         padding-bottom: 38px; } }
     .prices ul img {
       margin: 0 15px 0 20px; }
-      @media (min-width: 770px) {
+      @media (min-width: 768px) {
         .prices ul img {
           margin: 0 32px 0 55px; } }
   .prices .checked {
@@ -476,7 +476,7 @@ nav {
 .button-wrapper {
   text-align: center;
   margin-top: 40px; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .button-wrapper {
       margin-top: 73px; } }
   @media (min-width: 1180px) {
@@ -493,7 +493,7 @@ nav {
     background: url("/img/icons/right-arrow.svg") no-repeat;
     background-size: 7px;
     background-position: 90% center; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .button-wrapper a {
         font-size: 16px;
         padding: 9px 35px 9px 23px; } }
@@ -506,7 +506,7 @@ nav {
 
 .user-story-wrapper {
   width: 100%; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .user-story-wrapper .wrapper-table {
       display: table; } }
   .user-story-wrapper .wrapper-cell {
@@ -514,7 +514,7 @@ nav {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .user-story-wrapper .wrapper-cell {
         height: 385px; } }
     @media (min-width: 1180px) {
@@ -522,7 +522,7 @@ nav {
         height: 650px; } }
   .user-story-wrapper .user-story {
     background-color: #3149fb; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .user-story-wrapper .user-story {
         width: 50%;
         display: block;
@@ -536,7 +536,7 @@ nav {
       font-size: 14px;
       text-transform: uppercase;
       text-align: center; }
-      @media (min-width: 770px) {
+      @media (min-width: 768px) {
         .user-story-wrapper .user-story h4 {
           font-size: 16px; } }
       @media (min-width: 1180px) {
@@ -549,7 +549,7 @@ nav {
       font-size: 20px;
       line-height: 25px;
       margin: 20px 10px 23px; }
-      @media (min-width: 770px) {
+      @media (min-width: 768px) {
         .user-story-wrapper .user-story p {
           font-size: 28px;
           line-height: 36px;
@@ -575,7 +575,7 @@ nav {
         background: #e6eeff url("/img/icons/right-arrow.svg") no-repeat;
         background-size: 7px;
         background-position: 90% center; }
-      @media (min-width: 770px) {
+      @media (min-width: 768px) {
         .user-story-wrapper .user-story .white-button {
           font-size: 16px;
           padding: 12px 40px 10px 20px; } }
@@ -587,7 +587,7 @@ nav {
     background: url("/img/story-photo.jpg") no-repeat;
     background-size: cover;
     height: 230px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .user-story-wrapper .user-photo {
         width: 50%;
         display: block;
@@ -602,7 +602,7 @@ nav {
   .accordion-with .container {
     width: 100%;
     display: inline; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .accordion-with .container {
         display: block; } }
 
@@ -612,7 +612,7 @@ nav {
   font-size: 22px;
   margin-top: 35px;
   margin-bottom: 15px; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .notes {
       margin-top: 52px;
       margin-bottom: 44px;
@@ -629,7 +629,7 @@ nav {
   border-bottom: 2px solid #e4e3e3;
   width: 100%;
   left: 0; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     #accordion {
       position: inherit;
       border: 2px solid #e4e3e3;
@@ -643,7 +643,7 @@ nav {
     border-bottom: 2px solid #e4e3e3;
     position: relative;
     padding-left: 25px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       #accordion .accordion-button {
         font-size: 18px;
         line-height: 66px;
@@ -672,111 +672,133 @@ nav {
 
 .btn-blue {
   margin: 35px 0; }
-  @media (min-width: 770px) {
+  @media (min-width: 768px) {
     .btn-blue {
       margin: 50px 0; } }
   @media (min-width: 1180px) {
     .btn-blue {
       line-height: 60px; } }
 
-@media (min-width: 770px) {
-  .album .album-width {
-    width: 100%; } }
-
-.album .wrapper-table {
-  background-color: #2dc27a;
-  vertical-align: middle;
-  display: table;
-  margin: auto;
-  position: relative;
-  margin-bottom: 20px;
-  height: 325px;
-  width: 100%; }
-  @media (min-width: 770px) {
-    .album .wrapper-table {
-      height: 470px;
-      width: 350px; } }
+.album {
+  width: 100%;
+  height: 583px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .album {
+      height: 470px; } }
+  @media (min-width: 768px) {
+    .album .max-width {
+      width: 100%;
+      display: inline; } }
   @media (min-width: 1180px) {
-    .album .wrapper-table {
-      height: 470px;
-      width: 420px; } }
-  .album .wrapper-table .wrapper-cell {
-    display: table-cell;
+    .album .max-width {
+      display: block;
+      height: 472px; } }
+  .album .wrapper-table {
+    background-color: #2dc27a;
     vertical-align: middle;
-    text-align: center;
+    display: table;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
     height: 325px;
-    width: 275px; }
-    @media (min-width: 770px) {
-      .album .wrapper-table .wrapper-cell {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .album .wrapper-table {
         height: 470px;
-        width: 350px; } }
-    .album .wrapper-table .wrapper-cell img {
-      width: 40px;
-      margin-bottom: 15px; }
-      @media (min-width: 770px) {
-        .album .wrapper-table .wrapper-cell img {
-          width: 60px; } }
-    .album .wrapper-table .wrapper-cell h1 {
-      color: #ffffff;
-      font-family: museosans100;
-      font-size: 22px; }
-      @media (min-width: 770px) {
-        .album .wrapper-table .wrapper-cell h1 {
-          font-size: 30px; } }
-    .album .wrapper-table .wrapper-cell p {
-      color: #ffffff;
-      font-family: museosans300;
-      font-size: 14px;
-      line-height: 23px;
-      padding: 0 20px;
-      margin: 30px 0; }
-      @media (min-width: 770px) {
-        .album .wrapper-table .wrapper-cell p {
-          font-size: 18px;
-          line-height: 31px; } }
-    .album .wrapper-table .wrapper-cell .white-button {
-      display: inline-block;
-      text-decoration: none;
-      font-family: museosans700;
-      font-size: 16px;
-      color: #2dc27a;
-      background: #ffffff url(/img/icons/right-arrow-green.svg) no-repeat;
-      background-size: 7px;
-      background-position: 90% center;
-      padding: 12px 30px 12px 20px;
-      border-radius: 20px; }
-
-.album .img-wrapper .album-photo {
-  display: inline-block;
-  float: left;
-  width: 135px;
-  height: 115px;
-  margin-top: 4px; }
-  @media (min-width: 770px) {
-    .album .img-wrapper .album-photo {
-      width: 200px;
-      height: 230px; } }
-  @media (min-width: 1180px) {
-    .album .img-wrapper .album-photo {
-      width: 272px; } }
-
-.album .img-wrapper .first {
-  background: url("/img/photo-1.png") no-repeat;
-  background-size: cover;
-  margin-right: 4px; }
-
-.album .img-wrapper .second {
-  background: url("/img/photo-2.png") no-repeat;
-  background-size: cover; }
-
-.album .img-wrapper .third {
-  background: url("/img/photo-3.png") no-repeat;
-  background-size: cover;
-  margin-right: 4px; }
-
-.album .img-wrapper .forth {
-  background: url("/img/photo-4.png") no-repeat;
-  background-size: cover; }
+        width: 45.05%;
+        position: absolute;
+        left: 27.5%; } }
+    @media (min-width: 1180px) {
+      .album .wrapper-table {
+        height: 470px;
+        width: 420px; } }
+    .album .wrapper-table .wrapper-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      height: 325px;
+      width: 275px; }
+      @media (min-width: 768px) {
+        .album .wrapper-table .wrapper-cell {
+          height: 470px;
+          width: 45.05%; } }
+      .album .wrapper-table .wrapper-cell img {
+        width: 40px;
+        margin-bottom: 15px; }
+        @media (min-width: 768px) {
+          .album .wrapper-table .wrapper-cell img {
+            width: 60px; } }
+      .album .wrapper-table .wrapper-cell h1 {
+        color: #ffffff;
+        font-family: museosans100;
+        font-size: 22px; }
+        @media (min-width: 768px) {
+          .album .wrapper-table .wrapper-cell h1 {
+            font-size: 30px; } }
+      .album .wrapper-table .wrapper-cell p {
+        color: #ffffff;
+        font-family: museosans300;
+        font-size: 14px;
+        line-height: 23px;
+        padding: 0 20px;
+        margin: 30px 0; }
+        @media (min-width: 768px) {
+          .album .wrapper-table .wrapper-cell p {
+            font-size: 18px;
+            line-height: 31px; } }
+      .album .wrapper-table .wrapper-cell .white-button {
+        display: inline-block;
+        text-decoration: none;
+        font-family: museosans700;
+        font-size: 16px;
+        color: #2dc27a;
+        background: #ffffff url(/img/icons/right-arrow-green.svg) no-repeat;
+        background-size: 7px;
+        background-position: 90% center;
+        padding: 12px 30px 12px 20px;
+        border-radius: 20px; }
+  .album .album-photo {
+    display: inline-block;
+    float: left;
+    width: 135px;
+    height: 115px;
+    margin-top: 4px; }
+    @media (min-width: 768px) {
+      .album .album-photo {
+        width: 26.04%;
+        height: 230px;
+        position: absolute;
+        margin-top: 0;
+        float: none; } }
+  .album .first {
+    background: url("/img/photo-1.png") no-repeat;
+    background-size: cover;
+    margin-right: 4px; }
+    @media (min-width: 768px) {
+      .album .first {
+        left: 0; } }
+  .album .second {
+    background: url("/img/photo-2.png") no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .album .second {
+        right: 0; } }
+  .album .third {
+    background: url("/img/photo-3.png") no-repeat;
+    background-size: cover;
+    margin-right: 4px; }
+    @media (min-width: 768px) {
+      .album .third {
+        bottom: 0;
+        left: 0; } }
+  .album .forth {
+    background: url("/img/photo-4.png") no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .album .forth {
+        bottom: 0;
+        right: 0; } }
 
 .posts hr {
   border: 1px solid #e4e3e3; }
@@ -788,7 +810,7 @@ nav {
     width: 100%;
     margin-top: 35px;
     font-family: museosans100; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .posts .post h1 {
         font-size: 36px;
         width: 50%; } }
@@ -800,13 +822,13 @@ nav {
     font-family: museosans300;
     font-size: 14px;
     line-height: 25px; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .posts .post p {
         width: 50%; } }
   .posts .post img {
     width: 100%;
     margin: 25px 0; }
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
       .posts .post img {
         width: 50%; } }
   .posts .post .button-blue {

@@ -1,4 +1,19 @@
 .album {
+  width: 100%;
+  height: 583px;
+  position: relative;
+  @include breakpoint($br-medium) {
+    height: 470px;
+  }
+  .max-width {
+    @include breakpoint($br-medium) {
+      width: 100%;
+      display: inline;
+    }
+    @include breakpoint($br-large) {
+      display: block;
+      height: 472px;
+    }
   }
   .wrapper-table {
     background-color: #2dc27a;
@@ -11,7 +26,9 @@
     width: 100%;
     @include breakpoint($br-medium) {
       height: 470px;
-      width: 350px;
+      width: 45.05%;
+      position: absolute;
+      left: 27.5%;
     }
     @include breakpoint($br-large){
       height: 470px;
@@ -25,7 +42,7 @@
       width: 275px;
       @include breakpoint($br-medium) {
         height: 470px;
-        width: 350px;
+        width: 45.05%;
       }
       img {
         width: 40px;
@@ -68,39 +85,54 @@
       }
     }
   }
-  .img-wrapper {
-    .album-photo {
-      display: inline-block;
-      float: left;
-      width: 135px;
-      height: 115px;
-      margin-top: 4px;
-      @include breakpoint($br-medium) {
-        width: 200px;
-        height: 230px;
-      }
-      @include breakpoint($br-large) {
-        width: 272px;
-      }
+  .album-photo {
+    display: inline-block;
+    float: left;
+    width: 135px;
+    height: 115px;
+    margin-top: 4px;
+    @include breakpoint($br-medium) {
+      width: 26.04%;
+      height: 230px;
+      position: absolute;
+      margin-top: 0;
+      float: none;
     }
-    .first{
-      background: url("/img/photo-1.png") no-repeat;
-      background-size: cover;
-      margin-right: 4px;
-    }
-    .second {
-      background: url("/img/photo-2.png") no-repeat;
-      background-size: cover;
+    @include breakpoint($br-large) {
 
     }
-    .third {
-      background: url("/img/photo-3.png") no-repeat;
-      background-size: cover;
-      margin-right: 4px;
+  }
+  .first{
+    background: url("/img/photo-1.png") no-repeat;
+    background-size: cover;
+    margin-right: 4px;
+    @include breakpoint($br-medium) {
+      left: 0;
     }
-    .forth {
-      background: url("/img/photo-4.png") no-repeat;
-      background-size: cover;
+  }
+  .second {
+    background: url("/img/photo-2.png") no-repeat;
+    background-size: cover;
+    @include breakpoint($br-medium) {
+      right: 0;
+    }
+  }
+  .third {
+    background: url("/img/photo-3.png") no-repeat;
+    background-size: cover;
+    margin-right: 4px;
+    @include breakpoint($br-medium) {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .forth {
+    background: url("/img/photo-4.png") no-repeat;
+    background-size: cover;
+    @include breakpoint($br-medium) {
+      bottom: 0;
+      right: 0;
+
     }
   }
 }
