@@ -59,7 +59,7 @@
     &:last-of-type{
       border-bottom: none;
     }
-    &.active:last-of-type{
+    &.active:last-of-type {
       border-bottom: 2px solid #e4e3e3;
     }
     &:hover {
@@ -71,11 +71,63 @@
       transition: 0.7s;
     }
   }
-  .accordion-content{
+  .accordion-content {
     border-bottom: 2px solid #e4e3e3;
     display: none;
-    &:last-child{
+    &:last-child {
     border-bottom: none;
+    }
+    @include breakpoint($br-medium) {
+      height: 465px;
+    }
+    @include breakpoint($br-large) {
+      height: 428px;
+    }
+    p {
+      text-align: center;
+      font-family: museosans300;
+      font-size: 14px;
+      line-height: 25px;
+      padding: 25px 18px 20px;
+      @include breakpoint($br-medium) {
+        text-align: left;
+        line-height: 30px;
+        font-size: 15px;
+        padding: 0px 50px 0px;
+        &:first-child {
+          padding-top: 40px;
+        }
+      }
+      @include breakpoint($br-large) {
+        font-size: 18px;
+        padding: 0px 70px 0px;
+        &:first-child {
+          padding-top: 50px;
+        }
+      }
+    }
+    ul {
+      padding-left: 22px;
+      line-height: 27px;
+      @include breakpoint($br-medium) {
+        padding: 17px 67px;
+      }
+      @include breakpoint($br-large) {
+        padding: 23px 95px 31px;
+      }
+      li {
+        font-family: museosans700;
+        font-size: 14px;
+        list-style: circle;
+        @include breakpoint($br-medium) {
+          font-size: 15px;
+          line-height: 40px;
+        }
+        @include breakpoint($br-large) {
+          font-size: 18px;
+          line-height: 50px;
+        }
+      }
     }
   }
 }

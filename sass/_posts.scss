@@ -4,14 +4,19 @@
   }
   .post {
     text-align: center;
+    @include breakpoint($br-medium) {
+      text-align: left;
+    }
     h1 {
       font-size: 24px;
       width: 100%;
       margin-top: 35px;
       font-family: museosans100;
       @include breakpoint($br-medium) {
-        font-size: 36px;
+        font-size: 34px;
         width: 50%;
+        display: inline-block;
+        margin: 98px 0 36px;
       }
       @include breakpoint($br-large) {
         font-size: 48px;
@@ -24,6 +29,10 @@
       line-height: 25px;
       @include breakpoint($br-medium) {
         width: 50%;
+        font-size: 15px;
+        line-height: 28px;
+        display: table-cell;
+        padding-right: 22px;
       }
     }
     img {
@@ -31,6 +40,7 @@
       margin: 25px 0;
       @include breakpoint($br-medium) {
         width: 50%;
+        margin-top: 135px;
       }
     }
 
@@ -46,6 +56,10 @@
       background: url("/img/icons/right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center;
+      margin: 16px 0 40px;
+      @include breakpoint($br-medium) {
+        margin: 29px 0 42px;
+      }
     }
   }
   .left {
@@ -54,11 +68,21 @@
     }
   }
   .right {
+    float: right;
     img {
       float: left;
     }
-    h1, p {
-      float: right;
+    h1 {
+      @include breakpoint($br-medium) {
+        padding-left: 22px;
+        float: right;
+      }
+    }
+    p {
+      @include breakpoint($br-medium) {
+        padding-left: 22px;
+        padding-right: 0;
+      }
     }
   }
 }

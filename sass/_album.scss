@@ -3,7 +3,14 @@
   height: 583px;
   position: relative;
   @include breakpoint($br-medium) {
-    height: 470px;
+    height: 472px;
+    margin-bottom: 38px;
+  }
+  @include breakpoint($br-large) {
+    width: 980px;
+    margin: auto;
+    height: 472px;
+    margin-bottom: 56px;
   }
   .max-width {
     @include breakpoint($br-medium) {
@@ -25,14 +32,15 @@
     height: 325px;
     width: 100%;
     @include breakpoint($br-medium) {
-      height: 470px;
+      height: 472px;
       width: 45.05%;
       position: absolute;
       left: 27.5%;
     }
     @include breakpoint($br-large){
-      height: 470px;
-      width: 420px;
+      width: 42.85%;
+      height: 472px;
+      left: 28.67%;
     }
     .wrapper-cell{
       display: table-cell;
@@ -41,7 +49,7 @@
       height: 325px;
       width: 275px;
       @include breakpoint($br-medium) {
-        height: 470px;
+        height: 472px;
         width: 45.05%;
       }
       img {
@@ -99,7 +107,8 @@
       float: none;
     }
     @include breakpoint($br-large) {
-
+      width: 27.95%;
+      height: 230px;
     }
   }
   .first{
