@@ -877,7 +877,7 @@ nav {
         font-size: 34px;
         width: 50%;
         display: inline-block;
-        margin: 98px 0 36px; } }
+        margin: 48px 0 36px; } }
     @media (min-width: 1180px) {
       .posts .post h1 {
         font-size: 48px; } }
@@ -904,7 +904,7 @@ nav {
         width: 295px;
         height: 220px;
         float: right;
-        margin: 135px auto; } }
+        margin: 108px 0 135px; } }
   .posts .post .post-img-2 {
     background: url("/img/post-2.png") no-repeat;
     background-size: contain;
@@ -915,7 +915,8 @@ nav {
       .posts .post .post-img-2 {
         width: 260px;
         height: 193px;
-        float: left; } }
+        float: left;
+        margin: 108px 0 135px; } }
   .posts .post .post-img-3 {
     background: url("/img/post-3.png") no-repeat;
     background-size: contain;
@@ -926,7 +927,8 @@ nav {
       .posts .post .post-img-3 {
         width: 273px;
         height: 213px;
-        float: right; } }
+        float: right;
+        margin: 108px 0 135px; } }
   .posts .post .button-blue {
     display: inline-block;
     color: #0050ff;
