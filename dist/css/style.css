@@ -893,13 +893,40 @@ nav {
         line-height: 28px;
         display: table-cell;
         padding-right: 22px; } }
-  .posts .post img {
-    width: 100%;
-    margin: 25px 0; }
+  .posts .post .post-img-1 {
+    background: url("/img/post-1.png") no-repeat center;
+    background-size: contain;
+    width: 230px;
+    height: 170px;
+    margin: 25px auto; }
     @media (min-width: 768px) {
-      .posts .post img {
-        width: 50%;
-        margin-top: 135px; } }
+      .posts .post .post-img-1 {
+        width: 295px;
+        height: 220px;
+        float: right;
+        margin: 135px auto; } }
+  .posts .post .post-img-2 {
+    background: url("/img/post-2.png") no-repeat;
+    background-size: contain;
+    width: 230px;
+    height: 170px;
+    margin: 25px auto; }
+    @media (min-width: 768px) {
+      .posts .post .post-img-2 {
+        width: 260px;
+        height: 193px;
+        float: left; } }
+  .posts .post .post-img-3 {
+    background: url("/img/post-3.png") no-repeat;
+    background-size: contain;
+    width: 225px;
+    height: 170px;
+    margin: 25px auto; }
+    @media (min-width: 768px) {
+      .posts .post .post-img-3 {
+        width: 273px;
+        height: 213px;
+        float: right; } }
   .posts .post .button-blue {
     display: inline-block;
     color: #0050ff;
