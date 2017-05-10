@@ -316,6 +316,8 @@ nav {
   text-align: center;
   box-sizing: border-box;
   padding-right: 3px; }
+  .nav-tabs .tab:hover {
+    cursor: pointer; }
   .nav-tabs .tab:last-child {
     padding-right: 0;
     padding-left: 3px; }
@@ -900,6 +902,9 @@ nav {
       .posts .post img {
         width: 50%;
         margin-top: 135px; } }
+    @media (min-width: 1180px) {
+      .posts .post img {
+        width: 33%; } }
   .posts .post .button-blue {
     display: inline-block;
     color: #0050ff;
@@ -916,19 +921,24 @@ nav {
     @media (min-width: 768px) {
       .posts .post .button-blue {
         margin: 29px 0 42px; } }
+    .posts .post .button-blue:hover {
+      color: #081f3f;
+      border: 2px solid #081f3f;
+      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center; }
 
 .posts .left img {
   float: right; }
 
 .posts .right {
-  float: right; }
+  height: 450px; }
   .posts .right img {
     float: left; }
   @media (min-width: 768px) {
     .posts .right h1 {
-      padding-left: 22px;
       float: right; } }
   @media (min-width: 768px) {
     .posts .right p {
-      padding-left: 22px;
-      padding-right: 0; } }
+      padding-right: 0;
+      float: right; } }

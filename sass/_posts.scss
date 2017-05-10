@@ -20,6 +20,7 @@
       }
       @include breakpoint($br-large) {
         font-size: 48px;
+
       }
     }
     p {
@@ -42,6 +43,9 @@
         width: 50%;
         margin-top: 135px;
       }
+      @include breakpoint($br-large) {
+        width: 33%;
+      }
     }
 
     .button-blue {
@@ -60,6 +64,13 @@
       @include breakpoint($br-medium) {
         margin: 29px 0 42px;
       }
+      &:hover {
+        color: $downriver;
+        border:  2px solid $downriver;
+        background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+        background-size: 7px;
+        background-position: 90% center;
+      }
     }
   }
   .left {
@@ -68,20 +79,21 @@
     }
   }
   .right {
-    float: right;
+    height: 450px;
     img {
       float: left;
     }
     h1 {
       @include breakpoint($br-medium) {
-        padding-left: 22px;
+        //padding-left: 22px;
         float: right;
       }
     }
     p {
       @include breakpoint($br-medium) {
-        padding-left: 22px;
+        //padding-left: 22px;
         padding-right: 0;
+        float: right;
       }
     }
   }
