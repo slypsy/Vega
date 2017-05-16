@@ -860,7 +860,8 @@ nav {
         right: 0; } }
 
 .posts hr {
-  border: 1px solid #e4e3e3; }
+  border: 1px solid #e4e3e3;
+  margin: 0; }
 
 .posts .post {
   text-align: center; }
@@ -880,7 +881,8 @@ nav {
         margin: 48px 0 36px; } }
     @media (min-width: 1180px) {
       .posts .post h1 {
-        font-size: 48px; } }
+        font-size: 48px;
+        margin: 39px 0 43px; } }
   .posts .post p {
     width: 100%;
     font-family: museosans300;
@@ -892,7 +894,13 @@ nav {
         font-size: 15px;
         line-height: 28px;
         display: table-cell;
-        padding-right: 22px; } }
+        padding-right: 52px; } }
+    @media (min-width: 1180px) {
+      .posts .post p {
+        font-size: 18px;
+        display: block;
+        line-height: 30px;
+        padding-right: 0; } }
   .posts .post .post-img-1 {
     background: url("/img/post-1.png") no-repeat center;
     background-size: contain;
@@ -905,6 +913,12 @@ nav {
         height: 220px;
         float: right;
         margin: 108px 0 135px; } }
+    @media (min-width: 1180px) {
+      .posts .post .post-img-1 {
+        width: 390px;
+        height: 290px;
+        margin: 0;
+        margin-top: 40px; } }
   .posts .post .post-img-2 {
     background: url("/img/post-2.png") no-repeat;
     background-size: contain;
@@ -917,6 +931,13 @@ nav {
         height: 193px;
         float: left;
         margin: 108px 0 135px; } }
+    @media (min-width: 1180px) {
+      .posts .post .post-img-2 {
+        width: 365px;
+        height: 274px;
+        margin: 0;
+        margin-right: 160px;
+        margin-top: 55px; } }
   .posts .post .post-img-3 {
     background: url("/img/post-3.png") no-repeat;
     background-size: contain;
@@ -928,7 +949,14 @@ nav {
         width: 273px;
         height: 213px;
         float: right;
-        margin: 108px 0 135px; } }
+        margin: 108px 0 135px;
+        padding-left: 20px; } }
+    @media (min-width: 1180px) {
+      .posts .post .post-img-3 {
+        width: 390px;
+        height: 298px;
+        margin: 0;
+        margin-top: 35px; } }
   .posts .post .button-blue {
     display: inline-block;
     color: #0050ff;
@@ -945,19 +973,120 @@ nav {
     @media (min-width: 768px) {
       .posts .post .button-blue {
         margin: 29px 0 42px; } }
+    @media (min-width: 1180px) {
+      .posts .post .button-blue {
+        margin: 41px 0 42px;
+        font-size: 16px;
+        padding: 10px 37px 10px 15px;
+        background-size: 8px; } }
 
 .posts .left img {
   float: right; }
 
+@media (min-width: 1180px) {
+  .posts .left {
+    margin: 70px 0; } }
+
 .posts .right {
   float: right; }
+  @media (min-width: 1180px) {
+    .posts .right {
+      margin: 57px 0; } }
   .posts .right img {
     float: left; }
   @media (min-width: 768px) {
     .posts .right h1 {
-      padding-left: 22px;
+      margin-left: 65px;
+      display: block;
       float: right; } }
   @media (min-width: 768px) {
     .posts .right p {
-      padding-left: 22px;
+      padding-left: 65px;
+      padding-right: 20px; } }
+  @media (min-width: 1180px) {
+    .posts .right p {
+      width: 50%;
+      float: right;
       padding-right: 0; } }
+  @media (min-width: 768px) {
+    .posts .right .button-blue {
+      margin-left: 65px; } }
+
+.contact-form {
+  background-color: #f7f7f7; }
+  .contact-form h1 {
+    text-align: center;
+    font-family: museosans100;
+    font-size: 22px;
+    padding: 36px 0 11px; }
+    @media (min-width: 768px) {
+      .contact-form h1 {
+        font-size: 35px;
+        padding: 75px 0 45px; } }
+  .contact-form form {
+    text-align: center;
+    font-family: museosans700;
+    font-size: 15px;
+    color: #081f3f;
+    line-height: 40px; }
+    @media (min-width: 768px) {
+      .contact-form form {
+        background-color: #ffffff;
+        padding: 45px 60px;
+        text-align: left; } }
+    .contact-form form input[type="text"], .contact-form form input[type="number"], .contact-form form input[type="email"] {
+      width: 100%;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      height: 40px;
+      margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .contact-form form .name {
+        width: 47.5%;
+        float: left; } }
+    @media (min-width: 768px) {
+      .contact-form form .number {
+        width: 47.5%;
+        float: right; } }
+    @media (min-width: 768px) {
+      .contact-form form input[type="text"] {
+        float: left; } }
+    @media (min-width: 768px) {
+      .contact-form form input[type="number"] {
+        float: right; } }
+    .contact-form form label {
+      float: left;
+      line-height: 25px;
+      color: #767676;
+      font-family: museosans300; }
+      .contact-form form label input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #e6e5e5;
+        border-radius: 5px;
+        float: left;
+        margin: 0;
+        margin-right: 10px; }
+    .contact-form form textarea {
+      width: 100%;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px; }
+    .contact-form form .button-blue {
+      display: inline-block;
+      color: #0050ff;
+      font-family: museosans700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 2px solid #0050ff;
+      border-radius: 20px;
+      padding: 10px 25px 10px 10px;
+      background: url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+      margin: 16px 0 85px;
+      line-height: normal; }
+      @media (min-width: 768px) {
+        .contact-form form .button-blue {
+          margin: 16px 0 54px;
+          font-size: 16px;
+          padding: 10px 40px 10px 15px; } }

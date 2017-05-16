@@ -1,6 +1,7 @@
 .posts {
   hr {
     border: 1px solid #e4e3e3;
+    margin: 0;
   }
   .post {
     text-align: center;
@@ -20,6 +21,7 @@
       }
       @include breakpoint($br-large) {
         font-size: 48px;
+        margin: 39px 0 43px;
       }
     }
     p {
@@ -32,7 +34,14 @@
         font-size: 15px;
         line-height: 28px;
         display: table-cell;
-        padding-right: 22px;
+        padding-right: 52px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 18px;
+        display: block;
+        line-height: 30px;
+        padding-right: 0;
+
       }
     }
     .post-img-1 {
@@ -47,6 +56,12 @@
         float: right;
         margin: 108px 0 135px;
       }
+      @include breakpoint($br-large) {
+        width: 390px;
+        height: 290px;
+        margin: 0;
+        margin-top: 40px;
+      }
     }
     .post-img-2 {
       background: url("/img/post-2.png") no-repeat;
@@ -60,6 +75,13 @@
         float: left;
         margin: 108px 0 135px;
       }
+      @include breakpoint($br-large) {
+        width: 365px;
+        height: 274px;
+        margin: 0;
+        margin-right: 160px;
+        margin-top: 55px;
+      }
     }
     .post-img-3 {
       background: url("/img/post-3.png") no-repeat;
@@ -72,6 +94,13 @@
         height: 213px;
         float: right;
         margin: 108px 0 135px;
+        padding-left: 20px;
+      }
+      @include breakpoint($br-large) {
+        width: 390px;
+        height: 298px;
+        margin: 0;
+        margin-top: 35px;
       }
 
     }
@@ -101,28 +130,54 @@
       @include breakpoint($br-medium) {
         margin: 29px 0 42px;
       }
+      @include breakpoint($br-large) {
+        margin: 41px 0 42px;
+        font-size: 16px;
+        padding: 10px 37px 10px 15px;
+        background-size: 8px;
+      }
     }
   }
   .left {
     img {
       float: right;
     }
+    @include breakpoint($br-large) {
+      margin: 70px 0;
+    }
   }
   .right {
     float: right;
+    @include breakpoint($br-large) {
+      margin: 57px 0;
+    }
     img {
       float: left;
     }
     h1 {
       @include breakpoint($br-medium) {
-        padding-left: 22px;
+        margin-left: 65px;
+        display: block;
         float: right;
+      }
+      @include breakpoint($br-large) {
+
       }
     }
     p {
       @include breakpoint($br-medium) {
-        padding-left: 22px;
+        padding-left: 65px;
+        padding-right: 20px;
+      }
+      @include breakpoint($br-large) {
+        width: 50%;
+        float: right;
         padding-right: 0;
+      }
+    }
+    .button-blue {
+      @include breakpoint($br-medium) {
+        margin-left: 65px;
       }
     }
   }

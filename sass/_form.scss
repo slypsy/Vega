@@ -1,0 +1,95 @@
+.contact-form {
+  background-color: #f7f7f7;
+  h1 {
+    text-align: center;
+    font-family: museosans100;
+    font-size: 22px;
+    padding: 36px 0 11px;
+    @include breakpoint($br-medium) {
+      font-size: 35px;
+      padding: 75px 0 45px;
+
+    }
+  }
+  form {
+    text-align: center;
+    font-family: museosans700;
+    font-size: 15px;
+    color: $downriver;
+    line-height: 40px;
+    @include breakpoint($br-medium) {
+      background-color: $white;
+      padding: 45px 60px;
+      text-align: left;
+    }
+    input[type="text"],input[type="number"],input[type="email"] {
+      width: 100%;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .name {
+      @include breakpoint($br-medium) {
+        width: 47.5%;
+        float: left;
+      }
+    }
+    .number{
+      @include breakpoint($br-medium) {
+        width: 47.5%;
+        float: right;
+      }
+    }
+    input[type="text"]{
+      @include breakpoint($br-medium) {
+        float: left;
+      }
+    }
+    input[type="number"] {
+      @include breakpoint($br-medium) {
+        float: right;
+      }
+    }
+    label {
+      float: left;
+      line-height: 25px;
+      color: #767676;
+      font-family: museosans300;
+      input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #e6e5e5;
+        border-radius: 5px;
+        float: left;
+        margin: 0;
+        margin-right: 10px;
+      }
+    }
+    textarea {
+      width: 100%;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+    }
+    .button-blue {
+      display: inline-block;
+      color: $blue-ribbon;
+      font-family: museosans700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 2px solid $blue-ribbon;
+      border-radius: 20px;
+      padding: 10px 25px 10px 10px;
+      background: url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+      margin: 16px 0 85px;
+      line-height: normal;
+      @include breakpoint($br-medium) {
+        margin: 16px 0 54px;
+        font-size: 16px;
+        padding: 10px 40px 10px 15px;
+      }
+    }
+  }
+}
