@@ -127,6 +127,13 @@
       background-size: 7px;
       background-position: 90% center;
       margin: 16px 0 40px;
+      &:hover {
+        color: $downriver;
+        border:  2px solid $downriver;
+        background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+        background-size: 7px;
+        background-position: 90% center;
+      }
       @include breakpoint($br-medium) {
         margin: 29px 0 42px;
       }

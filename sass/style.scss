@@ -46,15 +46,9 @@ $susy: (
   }
 }
 
-@include breakpoint($br-large){
-  .column-1-4, .column-2-4, .column-3-4, .column-4-4{
-    @include span(3 of 12);
-  }
-  .column-4-4{
-    @include last;
-  }
-}
 @include breakpoint($br-medium){
+  .column-1-2, .column-2-2 {
+  }
   .column-1-4, .column-2-4, .column-3-4, .column-4-4{
     @include span(3 of 12);
   }
@@ -68,11 +62,6 @@ $susy: (
   display: table;
   clear: both;
 }
-
-
-
-
-
 
 @import "header";
 @import "fonts";
