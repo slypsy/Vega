@@ -17,7 +17,6 @@ $alto: #d9d9d9;
 $wild-sand: #f6f6f6;
 $gray-chateau: #9ea2aa;
 
-
 $susy: (
         flow: ltr, // ltr | rtl
         output: float, // float | isolate
@@ -30,9 +29,8 @@ $susy: (
         gutters: 1/4,
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
-        debug: (image: hide)
+        debug: (image: show)
 );
-
 .container {
   @include show-grid(12);
   @include breakpoint($br-small) {
@@ -45,24 +43,20 @@ $susy: (
     @include container(1180px);
   }
 }
-
 @include breakpoint($br-medium){
-  .column-1-2, .column-2-2 {
-  }
   .column-1-4, .column-2-4, .column-3-4, .column-4-4{
     @include span(3 of 12);
   }
   .column-4-4{
     @include last;
   }
-}
 
+}
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-
 @import "header";
 @import "fonts";
 @import "promo";

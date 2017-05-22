@@ -1,5 +1,65 @@
 .contact-form {
-  background-color: #f7f7f7;
+  .container {
+    @include breakpoint($br-large) {
+      background-color: $white;
+    }
+  }
+  .form-col {
+    @include span(12 of 12);
+    @include breakpoint($br-medium) {
+      //background-color: $white;
+      padding-top: 36px;
+    }
+    @include breakpoint($br-large) {
+      @include span(7.5 of 12);
+    }
+
+  }
+  .info-col {
+    display: none;
+    @include span(12 of 12);
+    @include breakpoint($br-medium) {
+      display: block;
+      padding: 15px 0 20px;
+    }
+    @include breakpoint($br-large) {
+      @include span(4.5);
+      @include last;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+    }
+  }
+  .info-mobile {
+    @include breakpoint($br-medium) {
+      display: none;
+    }
+  }
+  .form-container{
+    @include breakpoint($br-medium) {
+      @include with-layout((
+              column-width: 250px,//80px, // false | value
+              container: 522px, // length or % | auto
+              columns: 2,
+              gutters: 20px/250px,
+              gutter-position: after,
+              global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+              debug: (image: show)
+      )){
+        @include container();
+        .column-1-2 {
+          @include span(1);
+        }
+        .column-2-2 {
+          @include span(1);
+          @include last;
+        }
+      }
+
+    }
+  }
+
+
+
   h1 {
     text-align: center;
     font-family: museosans100;
@@ -8,7 +68,6 @@
     @include breakpoint($br-medium) {
       font-size: 35px;
       padding: 75px 0 45px;
-
     }
   }
   form {
@@ -18,99 +77,54 @@
     color: $downriver;
     line-height: 40px;
     margin-top: 10px;
+    width: 100%;
     @include breakpoint($br-medium) {
-      background-color: $white;
+      //background-color: $white;
       text-align: left;
-      padding: 46px 65px;
+      //@include pre(2 of 12);
+      //width: span(8);
     }
-    .form-row {
-      input {
-        border: 2px solid #e6e5e5;
-        border-radius: 5px;
-        width: 100%;
-        height: 40px;
-        font-family: museosans300;
-        font-size: 14px;
-        @include breakpoint($br-medium) {
-          height: 50px;
-        }
-        @include breakpoint($br-large) {
-          height: 55px;
-          font-size: 16px;
-        }
+    input {
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      font-family: museosans300;
+      font-size: 14px;
+      box-sizing: border-box;
+      @include breakpoint($br-medium) {
+        height: 50px;
       }
-      textarea {
-        height: 138px;
-        border: 2px solid #e6e5e5;
-        border-radius: 5px;
-        width: 100%;
-        font-family: museosans300;
-        font-size: 14px;
+      @include breakpoint($br-large) {
+        height: 55px;
+        font-size: 16px;
       }
-      .terms {
-        height: 25px;
-        text-align: left;
-        color: #767676;
-        font-family: museosans300;
-        line-height: 25px;
-        display: block;
-        #c-box {
-          line-height: 25px;
-          width: 25px;
-          height: 25px;
-          margin: 0;
-          margin-right: 10px;
-        }
-      }
+    }
+    textarea {
+      height: 138px;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      width: 100%;
+      font-family: museosans300;
+      font-size: 14px;
+      box-sizing: border-box;
 
     }
-    //input[type="text"],input[type="number"],input[type="email"] {
-    //  width: 100%;
-    //  border: 2px solid #e6e5e5;
-    //  border-radius: 5px;
-    //  height: 40px;
-    //  margin-bottom: 10px;
-    //}
-    //.name {
-    //  @include breakpoint($br-medium) {
-    //    float: left;
-    //  }
-    //}
-    //.number{
-    //  @include breakpoint($br-medium) {
-    //    float: right;
-    //  }
-    //}
-    //input[type="text"]{
-    //  @include breakpoint($br-medium) {
-    //    float: left;
-    //  }
-    //}
-    //input[type="number"] {
-    //  @include breakpoint($br-medium) {
-    //    float: right;
-    //  }
-    //}
-    //label {
-    //  float: left;
-    //  line-height: 25px;
-    //  color: #767676;
-    //  font-family: museosans300;
-    //  input[type="checkbox"] {
-    //    width: 25px;
-    //    height: 25px;
-    //    border: 2px solid #e6e5e5;
-    //    border-radius: 5px;
-    //    float: left;
-    //    margin: 0;
-    //    margin-right: 10px;
-    //  }
-    //}
-    //textarea {
-    //  width: 100%;
-    //  border: 2px solid #e6e5e5;
-    //  border-radius: 5px;
-    //}
+    .terms {
+      height: 25px;
+      text-align: left;
+      color: #767676;
+      font-family: museosans300;
+      line-height: 25px;
+      display: block;
+      #c-box {
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        margin-right: 10px;
+      }
+    }
     .button-blue {
       display: inline-block;
       color: $blue-ribbon;
@@ -127,7 +141,7 @@
       line-height: normal;
       &:hover {
         color: $downriver;
-        border:  2px solid $downriver;
+        border: 2px solid $downriver;
         background: url("/img/icons/hover-right-arrow.svg") no-repeat;
         background-size: 7px;
         background-position: 90% center;
@@ -136,6 +150,82 @@
         margin: 16px 0 54px;
         font-size: 16px;
         padding: 10px 40px 10px 15px;
+      }
+    }
+  }
+  .info-mobile, .info-col {
+    background-color: #004ffb;
+    text-align: center;
+    h1 {
+      color: $white;
+      font-family: museosans300;
+      font-size: 24px;
+      padding: 42px 0 24px;
+      @include breakpoint($br-medium) {
+        font-size: 30px;
+        font-family: museosans100;
+        padding-bottom: 20px;
+      }
+    }
+    p {
+      color: $white;
+      font-family: museosans300;
+      line-height: 25px;
+      font-size: 15px;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+        padding: 0 80px;
+      }
+    }
+    .card {
+      background-color: $white;
+      display: inline-block;
+      margin: 22px 0 40px;
+      width: 100%;
+      padding: 30px 0;
+      border-radius: 5px;
+      @include breakpoint($br-medium) {
+        width: 390px;
+        margin-top: 31px;
+        padding: 36px 0 23px;
+      }
+      h2 {
+        color: $downriver;
+        font-family: museosans300;
+        padding-bottom: 5px;
+        @include breakpoint($br-medium) {
+          font-size: 23px;
+          padding-bottom: 8px;
+        }
+      }
+      h3 {
+        font-family: museosans300;
+        color: $downriver;
+        @include breakpoint($br-medium) {
+          font-size: 16px;
+        }
+      }
+      .card-img {
+        background: url("/img/card-img.jpg") no-repeat center;
+        height: 55px;
+        width: 55px;
+        margin: auto;
+        padding: 15px 0 15px;
+        @include breakpoint($br-medium) {
+          background: url("/img/card-img-medium.jpg") no-repeat center;
+          height: 68px;
+          width: 68px;
+          padding: 22px 0 22px;
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: museosans300;
+        color: $blue-ribbon;
+        @include breakpoint($br-medium) {
+          padding-bottom: 14px;
+        }
       }
     }
   }
