@@ -1,52 +1,33 @@
 /*---------colors---------*/
-.container {
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
-  @media (min-width: 320px) {
-    .container {
-      max-width: 275px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-      background-size: 8.47458%;
-      background-origin: content-box;
-      background-clip: content-box;
-      background-position: left top; }
-      .container:after {
-        content: " ";
-        display: block;
-        clear: both; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-      background-size: 8.47458%;
-      background-origin: content-box;
-      background-clip: content-box;
-      background-position: left top; }
-      .container:after {
-        content: " ";
-        display: block;
-        clear: both; } }
-  @media (min-width: 1180px) {
-    .container {
-      max-width: 1180px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-      background-size: 8.47458%;
-      background-origin: content-box;
-      background-clip: content-box;
-      background-position: left top; }
-      .container:after {
-        content: " ";
-        display: block;
-        clear: both; } }
+@media (min-width: 320px) {
+  .container {
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto; }
+    .container:after {
+      content: " ";
+      display: block;
+      clear: both; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto; }
+    .container:after {
+      content: " ";
+      display: block;
+      clear: both; } }
+
+@media (min-width: 1180px) {
+  .container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto; }
+    .container:after {
+      content: " ";
+      display: block;
+      clear: both; } }
 
 @media (min-width: 768px) {
   .column-1-4, .column-2-4, .column-3-4, .column-4-4 {
@@ -1030,221 +1011,255 @@ nav {
     .posts .right .button-blue {
       margin-left: 65px; } }
 
-@media (min-width: 1180px) {
-  .contact-form .container {
-    background-color: #ffffff; } }
-
-.contact-form .form-col {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  @media (min-width: 768px) {
-    .contact-form .form-col {
-      padding-top: 36px; } }
+.contact-form {
+  background-color: #f7f7f7; }
   @media (min-width: 1180px) {
-    .contact-form .form-col {
-      width: 61.86441%;
-      float: left;
-      margin-right: 1.69492%; } }
-
-.contact-form .info-col {
-  display: none;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  @media (min-width: 768px) {
-    .contact-form .info-col {
-      display: block;
-      padding: 15px 0 20px; } }
-  @media (min-width: 1180px) {
-    .contact-form .info-col {
-      width: 36.44068%;
-      float: left;
-      margin-right: 1.69492%;
-      float: right;
-      margin-right: 0;
-      margin-bottom: -99999px;
-      padding-bottom: 99999px; } }
-
-@media (min-width: 768px) {
-  .contact-form .info-mobile {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .contact-form .form-container {
-    max-width: 522px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 92.59259%, transparent 92.59259%);
-    background-size: 51.92308%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top; }
-    .contact-form .form-container:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .contact-form .form-container .column-1-2 {
-      width: 48.07692%;
-      float: left;
-      margin-right: 3.84615%; }
-    .contact-form .form-container .column-2-2 {
-      width: 48.07692%;
-      float: left;
-      margin-right: 3.84615%;
-      float: right;
-      margin-right: 0; } }
-
-.contact-form h1 {
-  text-align: center;
-  font-family: museosans100;
-  font-size: 22px;
-  padding: 36px 0 11px; }
-  @media (min-width: 768px) {
-    .contact-form h1 {
-      font-size: 35px;
-      padding: 75px 0 45px; } }
-
-.contact-form form {
-  text-align: center;
-  font-family: museosans700;
-  font-size: 15px;
-  color: #081f3f;
-  line-height: 40px;
-  margin-top: 10px;
-  width: 100%; }
-  @media (min-width: 768px) {
-    .contact-form form {
-      text-align: left; } }
-  .contact-form form input {
-    border: 2px solid #e6e5e5;
-    border-radius: 5px;
+    .contact-form .container {
+      background-color: #ffffff; } }
+  .contact-form .form-col {
     width: 100%;
-    height: 40px;
-    font-family: museosans300;
-    font-size: 14px;
-    box-sizing: border-box; }
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
     @media (min-width: 768px) {
-      .contact-form form input {
-        height: 50px; } }
+      .contact-form .form-col {
+        padding-top: 36px; } }
     @media (min-width: 1180px) {
-      .contact-form form input {
-        height: 55px;
-        font-size: 16px; } }
-  .contact-form form textarea {
-    height: 138px;
-    border: 2px solid #e6e5e5;
-    border-radius: 5px;
+      .contact-form .form-col {
+        width: 61.86441%;
+        float: left;
+        margin-right: 1.69492%; } }
+  .contact-form .info-col {
+    display: none;
     width: 100%;
-    font-family: museosans300;
-    font-size: 14px;
-    box-sizing: border-box; }
-  .contact-form form .terms {
-    height: 25px;
-    text-align: left;
-    color: #767676;
-    font-family: museosans300;
-    line-height: 25px;
-    display: block; }
-    .contact-form form .terms #c-box {
-      line-height: 25px;
-      width: 25px;
-      height: 25px;
-      margin: 0;
-      margin-right: 10px; }
-  .contact-form form .button-blue {
-    display: inline-block;
-    color: #0050ff;
-    font-family: museosans700;
-    font-size: 14px;
-    text-decoration: none;
-    border: 2px solid #0050ff;
-    border-radius: 20px;
-    padding: 10px 25px 10px 10px;
-    background: url("/img/icons/right-arrow.svg") no-repeat;
-    background-size: 7px;
-    background-position: 90% center;
-    margin: 60px 0 85px;
-    line-height: normal; }
-    .contact-form form .button-blue:hover {
-      color: #081f3f;
-      border: 2px solid #081f3f;
-      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
-      background-size: 7px;
-      background-position: 90% center; }
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
     @media (min-width: 768px) {
-      .contact-form form .button-blue {
-        margin: 16px 0 54px;
-        font-size: 16px;
-        padding: 10px 40px 10px 15px; } }
-
-.contact-form .info-mobile, .contact-form .info-col {
-  background-color: #004ffb;
-  text-align: center; }
-  .contact-form .info-mobile h1, .contact-form .info-col h1 {
-    color: #ffffff;
-    font-family: museosans300;
-    font-size: 24px;
-    padding: 42px 0 24px; }
+      .contact-form .info-col {
+        display: block;
+        padding: 15px 0 20px; } }
+    @media (min-width: 1180px) {
+      .contact-form .info-col {
+        width: 36.44068%;
+        float: left;
+        margin-right: 1.69492%;
+        float: right;
+        margin-right: 0;
+        padding: 37px 44px 0;
+        box-sizing: border-box;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; } }
+  @media (min-width: 768px) {
+    .contact-form .info-mobile {
+      display: none; } }
+  @media (min-width: 768px) {
+    .contact-form .form-container {
+      max-width: 522px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 92.59259%, transparent 92.59259%);
+      background-size: 51.92308%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+      .contact-form .form-container:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .contact-form .form-container .column-1-2 {
+        width: 48.07692%;
+        float: left;
+        margin-right: 3.84615%; }
+      .contact-form .form-container .column-2-2 {
+        width: 48.07692%;
+        float: left;
+        margin-right: 3.84615%;
+        float: right;
+        margin-right: 0; } }
+  .contact-form h1 {
+    text-align: center;
+    font-family: museosans100, sans-serif;
+    font-size: 22px;
+    padding: 36px 0 11px; }
     @media (min-width: 768px) {
-      .contact-form .info-mobile h1, .contact-form .info-col h1 {
-        font-size: 30px;
-        font-family: museosans100;
-        padding-bottom: 20px; } }
-  .contact-form .info-mobile p, .contact-form .info-col p {
-    color: #ffffff;
-    font-family: museosans300;
-    line-height: 25px;
-    font-size: 15px; }
+      .contact-form h1 {
+        font-size: 35px;
+        padding: 75px 0 45px; } }
+  .contact-form form {
+    text-align: center;
+    font-family: museosans700, sans-serif;
+    font-size: 15px;
+    color: #081f3f;
+    line-height: 40px;
+    margin-top: 10px;
+    width: 100%; }
     @media (min-width: 768px) {
-      .contact-form .info-mobile p, .contact-form .info-col p {
-        font-size: 16px;
-        padding: 0 80px; } }
-  .contact-form .info-mobile .card, .contact-form .info-col .card {
-    background-color: #ffffff;
-    display: inline-block;
-    margin: 22px 0 40px;
-    width: 100%;
-    padding: 30px 0;
-    border-radius: 5px; }
-    @media (min-width: 768px) {
-      .contact-form .info-mobile .card, .contact-form .info-col .card {
-        width: 390px;
-        margin-top: 31px;
-        padding: 36px 0 23px; } }
-    .contact-form .info-mobile .card h2, .contact-form .info-col .card h2 {
-      color: #081f3f;
-      font-family: museosans300;
-      padding-bottom: 5px; }
+      .contact-form form {
+        background-color: #ffffff;
+        text-align: left; } }
+    .contact-form form .column:last-of-type {
+      text-align: center; }
+    .contact-form form input {
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      font-family: museosans300, sans-serif;
+      font-size: 14px;
+      box-sizing: border-box; }
       @media (min-width: 768px) {
-        .contact-form .info-mobile .card h2, .contact-form .info-col .card h2 {
-          font-size: 23px;
-          padding-bottom: 8px; } }
-    .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
-      font-family: museosans300;
-      color: #081f3f; }
-      @media (min-width: 768px) {
-        .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
+        .contact-form form input {
+          height: 50px; } }
+      @media (min-width: 1180px) {
+        .contact-form form input {
+          height: 55px;
           font-size: 16px; } }
-    .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
-      background: url("/img/card-img.jpg") no-repeat center;
-      height: 55px;
-      width: 55px;
-      margin: auto;
-      padding: 15px 0 15px; }
+    .contact-form form .email, .contact-form form .message, .contact-form form .accept {
+      text-align: center; }
       @media (min-width: 768px) {
-        .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
-          background: url("/img/card-img-medium.jpg") no-repeat center;
-          height: 68px;
-          width: 68px;
-          padding: 22px 0 22px; } }
-    .contact-form .info-mobile .card a, .contact-form .info-col .card a {
-      display: block;
-      text-decoration: none;
+        .contact-form form .email, .contact-form form .message, .contact-form form .accept {
+          text-align: left; } }
+    .contact-form form textarea {
+      height: 138px;
+      border: 2px solid #e6e5e5;
+      border-radius: 5px;
+      width: 100%;
       font-family: museosans300;
-      color: #0050ff; }
+      font-size: 14px;
+      box-sizing: border-box; }
+    .contact-form form .terms {
+      height: 25px;
+      text-align: left;
+      color: #767676;
+      font-family: museosans300;
+      line-height: 25px;
+      display: block; }
+      .contact-form form .terms #c-box {
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        margin-right: 10px; }
+    .contact-form form .button-blue {
+      display: inline-block;
+      color: #0050ff;
+      font-family: museosans700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 2px solid #0050ff;
+      border-radius: 20px;
+      padding: 10px 25px 10px 10px;
+      background: url("/img/icons/right-arrow.svg") no-repeat;
+      background-size: 7px;
+      background-position: 90% center;
+      margin: 60px 0 85px;
+      line-height: normal; }
+      .contact-form form .button-blue:hover {
+        color: #081f3f;
+        border: 2px solid #081f3f;
+        background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+        background-size: 7px;
+        background-position: 90% center; }
       @media (min-width: 768px) {
-        .contact-form .info-mobile .card a, .contact-form .info-col .card a {
-          padding-bottom: 14px; } }
+        .contact-form form .button-blue {
+          margin: 16px 0 54px;
+          font-size: 16px;
+          padding: 10px 40px 10px 15px; } }
+  .contact-form .info-mobile, .contact-form .info-col {
+    background-color: #004ffb;
+    text-align: center; }
+    .contact-form .info-mobile h1, .contact-form .info-col h1 {
+      color: #ffffff;
+      font-family: museosans300;
+      font-size: 24px;
+      padding: 42px 0 24px; }
+      @media (min-width: 768px) {
+        .contact-form .info-mobile h1, .contact-form .info-col h1 {
+          font-size: 30px;
+          font-family: museosans100, sans-serif;
+          padding-bottom: 20px; } }
+      @media (min-width: 1180px) {
+        .contact-form .info-mobile h1, .contact-form .info-col h1 {
+          padding-bottom: 26px; } }
+    .contact-form .info-mobile p, .contact-form .info-col p {
+      color: #ffffff;
+      font-family: museosans300, sans-serif;
+      line-height: 25px;
+      font-size: 15px; }
+      @media (min-width: 768px) {
+        .contact-form .info-mobile p, .contact-form .info-col p {
+          font-size: 16px;
+          padding: 0 80px; } }
+      @media (min-width: 1180px) {
+        .contact-form .info-mobile p, .contact-form .info-col p {
+          font-size: 17px;
+          padding: 0;
+          line-height: 29px; } }
+    .contact-form .info-mobile .card, .contact-form .info-col .card {
+      background-color: #ffffff;
+      display: inline-block;
+      margin: 22px 0 40px;
+      width: 100%;
+      padding: 30px 0;
+      border-radius: 5px; }
+      @media (min-width: 768px) {
+        .contact-form .info-mobile .card, .contact-form .info-col .card {
+          width: 390px;
+          margin-top: 31px;
+          padding: 36px 0 23px; } }
+      @media (min-width: 1180px) {
+        .contact-form .info-mobile .card, .contact-form .info-col .card {
+          width: 100%;
+          margin-top: 42px;
+          padding: 44px 0 37px; } }
+      .contact-form .info-mobile .card h2, .contact-form .info-col .card h2 {
+        color: #081f3f;
+        font-family: museosans300, sans-serif;
+        padding-bottom: 5px; }
+        @media (min-width: 768px) {
+          .contact-form .info-mobile .card h2, .contact-form .info-col .card h2 {
+            font-size: 23px;
+            padding-bottom: 8px; } }
+        @media (min-width: 1180px) {
+          .contact-form .info-mobile .card h2, .contact-form .info-col .card h2 {
+            font-size: 25px; } }
+      .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
+        font-family: museosans300, sans-serif;
+        color: #081f3f; }
+        @media (min-width: 768px) {
+          .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
+            font-size: 16px; } }
+        @media (min-width: 1180px) {
+          .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
+            font-size: 18px; } }
+      .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
+        background: url("/img/card-img.jpg") no-repeat center;
+        height: 55px;
+        width: 55px;
+        margin: auto;
+        padding: 15px 0 15px; }
+        @media (min-width: 768px) {
+          .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
+            background: url("/img/card-img-medium.jpg") no-repeat center;
+            height: 68px;
+            width: 68px;
+            padding: 22px 0; } }
+        @media (min-width: 1180px) {
+          .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
+            background: url("/img/card-img-large.jpg") no-repeat center;
+            height: 88px;
+            width: 88px;
+            padding: 24px 0; } }
+      .contact-form .info-mobile .card a, .contact-form .info-col .card a {
+        display: block;
+        text-decoration: none;
+        font-family: museosans300, sans-serif;
+        color: #0050ff; }
+        @media (min-width: 768px) {
+          .contact-form .info-mobile .card a, .contact-form .info-col .card a {
+            padding-bottom: 14px; } }
+        @media (min-width: 1180px) {
+          .contact-form .info-mobile .card a, .contact-form .info-col .card a {
+            font-size: 18px;
+            padding-bottom: 10px; } }

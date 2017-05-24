@@ -1,4 +1,5 @@
 .contact-form {
+  background-color: #f7f7f7;
   .container {
     @include breakpoint($br-large) {
       background-color: $white;
@@ -13,7 +14,6 @@
     @include breakpoint($br-large) {
       @include span(7.5 of 12);
     }
-
   }
   .info-col {
     display: none;
@@ -25,6 +25,8 @@
     @include breakpoint($br-large) {
       @include span(4.5);
       @include last;
+      padding: 37px 44px 0;
+      box-sizing: border-box;
       margin-bottom: -99999px;
       padding-bottom: 99999px;
     }
@@ -54,15 +56,11 @@
           @include last;
         }
       }
-
     }
   }
-
-
-
   h1 {
     text-align: center;
-    font-family: museosans100;
+    font-family: museosans100, sans-serif;
     font-size: 22px;
     padding: 36px 0 11px;
     @include breakpoint($br-medium) {
@@ -72,24 +70,25 @@
   }
   form {
     text-align: center;
-    font-family: museosans700;
+    font-family: museosans700, sans-serif;
     font-size: 15px;
     color: $downriver;
     line-height: 40px;
     margin-top: 10px;
     width: 100%;
     @include breakpoint($br-medium) {
-      //background-color: $white;
+      background-color: $white;
       text-align: left;
-      //@include pre(2 of 12);
-      //width: span(8);
+    }
+    .column {
+      &:last-of-type{text-align: center}
     }
     input {
       border: 2px solid #e6e5e5;
       border-radius: 5px;
       width: 100%;
       height: 40px;
-      font-family: museosans300;
+      font-family: museosans300, sans-serif;
       font-size: 14px;
       box-sizing: border-box;
       @include breakpoint($br-medium) {
@@ -98,6 +97,12 @@
       @include breakpoint($br-large) {
         height: 55px;
         font-size: 16px;
+      }
+    }
+    .email, .message, .accept {
+      text-align: center;
+      @include breakpoint($br-medium) {
+        text-align: left;
       }
     }
     textarea {
@@ -163,18 +168,26 @@
       padding: 42px 0 24px;
       @include breakpoint($br-medium) {
         font-size: 30px;
-        font-family: museosans100;
+        font-family: museosans100, sans-serif;
         padding-bottom: 20px;
+      }
+      @include breakpoint($br-large) {
+        padding-bottom: 26px;
       }
     }
     p {
       color: $white;
-      font-family: museosans300;
+      font-family: museosans300, sans-serif;
       line-height: 25px;
       font-size: 15px;
       @include breakpoint($br-medium) {
         font-size: 16px;
         padding: 0 80px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 17px;
+        padding: 0;
+        line-height: 29px;
       }
     }
     .card {
@@ -189,20 +202,32 @@
         margin-top: 31px;
         padding: 36px 0 23px;
       }
+      @include breakpoint($br-large) {
+        width: 100%;
+        margin-top: 42px;
+        padding: 44px 0 37px;
+
+      }
       h2 {
         color: $downriver;
-        font-family: museosans300;
+        font-family: museosans300, sans-serif;
         padding-bottom: 5px;
         @include breakpoint($br-medium) {
           font-size: 23px;
           padding-bottom: 8px;
         }
+        @include breakpoint($br-large) {
+          font-size: 25px;
+        }
       }
       h3 {
-        font-family: museosans300;
+        font-family: museosans300, sans-serif;
         color: $downriver;
         @include breakpoint($br-medium) {
           font-size: 16px;
+        }
+        @include breakpoint($br-large) {
+          font-size: 18px;
         }
       }
       .card-img {
@@ -215,16 +240,28 @@
           background: url("/img/card-img-medium.jpg") no-repeat center;
           height: 68px;
           width: 68px;
-          padding: 22px 0 22px;
+          padding: 22px 0;
+        }
+        @include breakpoint($br-large) {
+          background: url("/img/card-img-large.jpg") no-repeat center;
+          height: 88px;
+          width: 88px;
+          padding: 24px 0;
+
         }
       }
+
       a {
         display: block;
         text-decoration: none;
-        font-family: museosans300;
+        font-family: museosans300, sans-serif;
         color: $blue-ribbon;
         @include breakpoint($br-medium) {
           padding-bottom: 14px;
+        }
+        @include breakpoint($br-large) {
+          font-size: 18px;
+          padding-bottom: 10px;
         }
       }
     }

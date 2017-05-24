@@ -29,7 +29,7 @@ $susy: (
         gutters: 1/4,
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
-        debug: (image: show)
+        debug: (image: hide)
 );
 .container {
   @include show-grid(12);
