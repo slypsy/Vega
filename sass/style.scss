@@ -29,7 +29,7 @@ $susy: (
         gutters: 1/4,
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
-        debug: (image: hide)
+        debug: (image: show)
 );
 .container {
   @include show-grid(12);
@@ -50,8 +50,8 @@ $susy: (
   .column-4-4{
     @include last;
   }
-
 }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -68,6 +68,8 @@ $susy: (
 @import "album";
 @import "posts";
 @import "form";
+@import "bot-nav";
+@import "footer";
 
 
 

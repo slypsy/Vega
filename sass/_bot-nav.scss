@@ -1,0 +1,71 @@
+.bot-nav {
+  background-color: #004ffb;
+  text-align: center;
+  @include with-layout((
+          columns: 12,
+          gutters: 0,
+          global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+          debug: (image: show)
+  )){
+    @include container();
+    .prev {
+      @include span(6);
+      @include breakpoint($br-medium) {
+        @include span(4)
+      }
+    }
+    .current {
+      display: none;
+      @include breakpoint($br-medium) {
+        display: block;
+        @include span(4);
+      }
+    }
+    .next {
+      @include span(6);
+      @include last;
+      @include breakpoint($br-medium) {
+        @include span(4);
+        @include last;
+      }
+    }
+  }
+  .prev, .current, .next {
+    :hover {
+      background-color: $science-blue;
+    }
+    a {
+      text-decoration: none;
+      color: $white;
+      font-family: museosans100, sans-serif;
+      display: block;
+      line-height: 70px;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+        line-height: 80px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 28px;
+        line-height: 160px;
+      }
+    }
+  }
+  .prev, .next {
+    a img {
+      height: 14px;
+      width: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      @include breakpoint($br-medium) {
+        height: 26px;
+        width: 26px;
+      }
+      @include breakpoint($br-large) {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+  .prev a img { margin-right: 20px }
+  .next a img { margin-left: 20px }
+}

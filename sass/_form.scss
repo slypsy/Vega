@@ -1,5 +1,11 @@
 .contact-form {
   background-color: #f7f7f7;
+  @include breakpoint($br-medium) {
+    padding-bottom: 75px;
+  }
+  @include breakpoint($br-large) {
+    padding-bottom: 120px;
+  }
   .container {
     @include breakpoint($br-large) {
       background-color: $white;

@@ -1,0 +1,155 @@
+footer {
+  background-color: #f7f7f7;
+  @include breakpoint($br-large) {
+    background-color: $white;
+  }
+  .footer-container {
+    padding-top: 30px;
+    @include breakpoint($br-medium) {
+      padding-top: 70px;
+    }
+    h4 {
+      font-family: museosans500, sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #a0a4ab;
+      padding-bottom: 13px;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+        padding-bottom: 32px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 14px;
+        padding-bottom: 16px;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-family: museosans500, sans-serif;
+      font-size: 12px;
+      color: $blue-ribbon;
+      line-height: 30px;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+        line-height: 40px;
+      }
+      @include breakpoint($br-large) {
+        line-height: 38px;
+        font-size: 15px;
+      }
+    }
+    .logo {
+      display: none;
+      @include breakpoint($br-large) {
+        display: block;
+        line-height: 0;
+        @include span(3 of 12);
+      }
+    }
+    .list-1 {
+      display: none;
+      @include breakpoint($br-large) {
+        display: block;
+        @include span(2 of 12);
+        @include push(3);
+      }
+    }
+    .list-2 {
+      @include span(6 of 12);
+      @include breakpoint($br-medium) {
+        @include span(4 of 12);
+      }
+      @include breakpoint($br-large) {
+        @include span(2 of 12);
+      }
+    }
+    .list-3 {
+      @include span(6 of 12);
+      @include last;
+      @include breakpoint($br-medium) {
+        @include span(4 of 12);
+      }
+      @include breakpoint($br-large) {
+        @include span(2 of 12);
+      }
+    }
+    .list-4 {
+      @include span(12 of 12);
+      @include last;
+      @include breakpoint($br-medium) {
+        @include span(4 of 12);
+        @include last;
+      }
+      @include breakpoint($br-large) {
+        @include span(3 of 12);
+        @include last;
+      }
+      .register-bottom {
+        display: none;
+        text-align: end;
+        right: 0;
+        @include breakpoint($br-large) {
+          display: block;
+        }
+        .btn {
+          background-color: $blue-ribbon;
+          height: 40px;
+          width: 80px;
+          display: inline-block;
+          text-decoration: none;
+          line-height: 40px;
+          text-align: center;
+          color: #fff;
+          font-family: museosans700;
+          font-size: 13px;
+          &:hover {
+            background-color: $science-blue;
+          }
+        }
+        .btn-log{
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+        .btn-sign{
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+      .apps {
+        display: inline-block;
+        @include breakpoint($br-medium) {
+          display: none;
+          float: right;
+          margin-top: 86px;
+          img{
+            display: inline-block;
+            margin-bottom: 0;
+            @include breakpoint($br-medium){
+              display: block;
+              margin-bottom: 17px;
+            }
+            @include breakpoint($br-large) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        @include breakpoint($br-large) {
+          display: inline-block;
+        }
+      }
+      .apps-medium {
+        display: none;
+        @include breakpoint($br-medium) {
+          display: block;
+        }
+        @include breakpoint($br-large) {
+          display: none;
+
+        }
+        img {
+          padding-bottom: 12px;
+        }
+      }
+    }
+  }
+}
