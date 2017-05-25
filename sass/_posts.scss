@@ -24,26 +24,6 @@
         margin: 39px 0 43px;
       }
     }
-    p {
-      width: 100%;
-      font-family: museosans300;
-      font-size: 14px;
-      line-height: 25px;
-      @include breakpoint($br-medium) {
-        width: 50%;
-        font-size: 15px;
-        line-height: 28px;
-        display: table-cell;
-        padding-right: 52px;
-      }
-      @include breakpoint($br-large) {
-        font-size: 18px;
-        display: block;
-        line-height: 30px;
-        padding-right: 0;
-
-      }
-    }
     .post-img-1 {
       background: url("/img/post-1.png") no-repeat center;
       background-size: contain;
@@ -64,11 +44,11 @@
       }
     }
     .post-img-2 {
-      background: url("/img/post-2.png") no-repeat;
       background-size: contain;
       width: 230px;
       height: 170px;
       margin: 25px auto;
+      float: none;
       @include breakpoint($br-medium) {
         width: 260px;
         height: 193px;
@@ -147,10 +127,32 @@
   }
   .left {
     img {
-      float: right;
+      @include breakpoint($br-medium) {
+        float: right;
+      }
     }
     @include breakpoint($br-large) {
       margin: 70px 0;
+    }
+    p {
+      width: 100%;
+      font-family: museosans300;
+      font-size: 14px;
+      line-height: 25px;
+      @include breakpoint($br-medium) {
+        width: 50%;
+        font-size: 15px;
+        line-height: 28px;
+        display: table-cell;
+        padding-right: 52px;
+      }
+      @include breakpoint($br-large) {
+        font-size: 18px;
+        display: block;
+        line-height: 30px;
+        padding-right: 0;
+
+      }
     }
   }
   .right {
@@ -163,7 +165,6 @@
     }
     h1 {
       @include breakpoint($br-medium) {
-        margin-left: 65px;
         display: block;
         float: right;
       }
@@ -172,14 +173,23 @@
       }
     }
     p {
+      width: 100%;
+      font-family: museosans300;
+      font-size: 14px;
+      line-height: 25px;
       @include breakpoint($br-medium) {
-        padding-left: 65px;
-        padding-right: 20px;
+        width: 50%;
+        font-size: 15px;
+        line-height: 28px;
+        display: table-cell;
+        float: right;
       }
       @include breakpoint($br-large) {
-        width: 50%;
-        float: right;
+        font-size: 18px;
+        display: block;
+        line-height: 30px;
         padding-right: 0;
+
       }
     }
     .button-blue {

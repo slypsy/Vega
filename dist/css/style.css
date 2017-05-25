@@ -1,33 +1,52 @@
 /*---------colors---------*/
-@media (min-width: 320px) {
-  .container {
-    max-width: 275px;
-    margin-left: auto;
-    margin-right: auto; }
-    .container:after {
-      content: " ";
-      display: block;
-      clear: both; } }
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto; }
-    .container:after {
-      content: " ";
-      display: block;
-      clear: both; } }
-
-@media (min-width: 1180px) {
-  .container {
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto; }
-    .container:after {
-      content: " ";
-      display: block;
-      clear: both; } }
+.container {
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  @media (min-width: 320px) {
+    .container {
+      max-width: 275px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+      background-size: 8.47458%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+      .container:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+      background-size: 8.47458%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+      .container:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (min-width: 1180px) {
+    .container {
+      max-width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+      background-size: 8.47458%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+      .container:after {
+        content: " ";
+        display: block;
+        clear: both; } }
 
 @media (min-width: 768px) {
   .column-1-4, .column-2-4, .column-3-4, .column-4-4 {
@@ -722,11 +741,13 @@ nav {
 .album {
   width: 100%;
   height: 583px;
-  position: relative; }
+  position: relative;
+  padding-bottom: 25px; }
   @media (min-width: 768px) {
     .album {
       height: 472px;
-      margin-bottom: 38px; } }
+      margin-bottom: 38px;
+      padding-bottom: 0; } }
   @media (min-width: 1180px) {
     .album {
       width: 980px;
@@ -876,24 +897,6 @@ nav {
       .posts .post h1 {
         font-size: 48px;
         margin: 39px 0 43px; } }
-  .posts .post p {
-    width: 100%;
-    font-family: museosans300;
-    font-size: 14px;
-    line-height: 25px; }
-    @media (min-width: 768px) {
-      .posts .post p {
-        width: 50%;
-        font-size: 15px;
-        line-height: 28px;
-        display: table-cell;
-        padding-right: 52px; } }
-    @media (min-width: 1180px) {
-      .posts .post p {
-        font-size: 18px;
-        display: block;
-        line-height: 30px;
-        padding-right: 0; } }
   .posts .post .post-img-1 {
     background: url("/img/post-1.png") no-repeat center;
     background-size: contain;
@@ -913,11 +916,11 @@ nav {
         margin: 0;
         margin-top: 40px; } }
   .posts .post .post-img-2 {
-    background: url("/img/post-2.png") no-repeat;
     background-size: contain;
     width: 230px;
     height: 170px;
-    margin: 25px auto; }
+    margin: 25px auto;
+    float: none; }
     @media (min-width: 768px) {
       .posts .post .post-img-2 {
         width: 260px;
@@ -979,12 +982,32 @@ nav {
         padding: 10px 37px 10px 15px;
         background-size: 8px; } }
 
-.posts .left img {
-  float: right; }
+@media (min-width: 768px) {
+  .posts .left img {
+    float: right; } }
 
 @media (min-width: 1180px) {
   .posts .left {
     margin: 70px 0; } }
+
+.posts .left p {
+  width: 100%;
+  font-family: museosans300;
+  font-size: 14px;
+  line-height: 25px; }
+  @media (min-width: 768px) {
+    .posts .left p {
+      width: 50%;
+      font-size: 15px;
+      line-height: 28px;
+      display: table-cell;
+      padding-right: 52px; } }
+  @media (min-width: 1180px) {
+    .posts .left p {
+      font-size: 18px;
+      display: block;
+      line-height: 30px;
+      padding-right: 0; } }
 
 .posts .right {
   float: right; }
@@ -995,18 +1018,26 @@ nav {
     float: left; }
   @media (min-width: 768px) {
     .posts .right h1 {
-      margin-left: 65px;
       display: block;
       float: right; } }
-  @media (min-width: 768px) {
-    .posts .right p {
-      padding-left: 65px;
-      padding-right: 20px; } }
-  @media (min-width: 1180px) {
-    .posts .right p {
-      width: 50%;
-      float: right;
-      padding-right: 0; } }
+  .posts .right p {
+    width: 100%;
+    font-family: museosans300;
+    font-size: 14px;
+    line-height: 25px; }
+    @media (min-width: 768px) {
+      .posts .right p {
+        width: 50%;
+        font-size: 15px;
+        line-height: 28px;
+        display: table-cell;
+        float: right; } }
+    @media (min-width: 1180px) {
+      .posts .right p {
+        font-size: 18px;
+        display: block;
+        line-height: 30px;
+        padding-right: 0; } }
   @media (min-width: 768px) {
     .posts .right .button-blue {
       margin-left: 65px; } }
