@@ -8,6 +8,9 @@ footer {
     @include breakpoint($br-medium) {
       padding-top: 70px;
     }
+    @include breakpoint($br-large) {
+      height: 275px;
+    }
     h4 {
       font-family: museosans500, sans-serif;
       text-transform: uppercase;
@@ -29,6 +32,9 @@ footer {
       font-size: 12px;
       color: $blue-ribbon;
       line-height: 30px;
+      &:hover {
+        color: $downriver;
+      }
       @include breakpoint($br-medium) {
         font-size: 16px;
         line-height: 40px;
@@ -116,29 +122,45 @@ footer {
         }
       }
       .apps {
-        display: inline-block;
+        @include breakpoint($br-small) {
+          display: inline-block;
+          padding: 27px 0;
+        }
         @include breakpoint($br-medium) {
           display: none;
           float: right;
+          padding: 0;
+
+        }
+        @include breakpoint($br-large) {
+          display: block;
           margin-top: 86px;
-          img{
+          padding: 0;
+        }
+        img{
+          @include breakpoint($br-small) {
             display: inline-block;
             margin-bottom: 0;
-            @include breakpoint($br-medium){
-              display: block;
-              margin-bottom: 17px;
+            &:first-child {
+              margin-right: 19px;
             }
-            @include breakpoint($br-large) {
-              margin-bottom: 10px;
+          }
+          @include breakpoint($br-medium){
+            display: none;
+          }
+          @include breakpoint($br-large) {
+            display: block;
+            margin-bottom: 10px;
+            &:first-child {
+              margin-right: 0;
             }
           }
         }
-        @include breakpoint($br-large) {
-          display: inline-block;
-        }
       }
       .apps-medium {
-        display: none;
+        @include breakpoint($br-small) {
+          display: none;
+        }
         @include breakpoint($br-medium) {
           display: block;
         }
@@ -147,7 +169,77 @@ footer {
 
         }
         img {
-          padding-bottom: 12px;
+          @include breakpoint($br-small) {
+            display: none;
+          }
+          @include breakpoint($br-medium) {
+            display: block;
+            margin-bottom: 17px;
+          }
+          @include breakpoint($br-large) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .footer-2 {
+    border-top: 1px solid #eaeaea;
+    line-height: 45px;
+    background-color: $white;
+    @include breakpoint($br-medium) {
+      padding: 13px 0 90px;
+    }
+    @include breakpoint($br-large) {
+      background-color: #f7f7f7;
+      border-top: 1px solid #eaeaea;
+      padding: 0;
+      line-height: 80px;
+    }
+    a {
+      text-decoration: none;
+      font-family: museosans300, sans-serif;
+      font-size: 11px;
+      color: $blue-ribbon;
+      @include breakpoint($br-medium) {
+        font-size: 16px;
+      }
+    }
+    span {
+      font-size: 11px;
+      color: #b9bfc7;
+    }
+    .social-icons {
+      float: right;
+      .icon-facebook, .icon-twitter, .icon-youtube {
+        width: 11px;
+        height: 11px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        @include breakpoint($br-medium) {
+          width: 19px;
+          height: 19px;
+          margin-right: 10px;
+        }
+      }
+      .icon-facebook {
+        background: url("/img/social-icons/facebook.png") no-repeat;
+        @include breakpoint($br-medium) {
+          background: url("/img/social-icons/facebook-lg.png") no-repeat;
+        }
+      }
+      .icon-twitter {
+        background: url("/img/social-icons/twetter.png") no-repeat;
+        @include breakpoint($br-medium) {
+          background: url("/img/social-icons/twetter-lg.png") no-repeat;
+        }
+      }
+      .icon-youtube {
+        background: url("/img/social-icons/youtube.png") no-repeat;
+        @include breakpoint($br-medium) {
+          background: url("/img/social-icons/youtube-lg.png") no-repeat;
+          margin-right: 0;
         }
       }
     }
