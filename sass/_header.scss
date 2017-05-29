@@ -234,12 +234,12 @@ header{
     }
     .burger {
       display: inline-block;
-      background: url("/img/icons/burger-sm.png") no-repeat;
+      background: url("../img/icons/burger-sm.png") no-repeat;
       height: 31px;
       width: 31px;
       vertical-align: middle;
       @include breakpoint($br-medium) {
-        background: url("/img/icons/burger-md.png") no-repeat;
+        background: url("../img/icons/burger-md.png") no-repeat;
         height: 40px;
         width: 40px;
       }

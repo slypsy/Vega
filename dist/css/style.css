@@ -243,13 +243,13 @@ header {
         line-height: 80px; } }
     header .burger-wrapper .burger {
       display: inline-block;
-      background: url("/img/icons/burger-sm.png") no-repeat;
+      background: url("../img/icons/burger-sm.png") no-repeat;
       height: 31px;
       width: 31px;
       vertical-align: middle; }
       @media (min-width: 768px) {
         header .burger-wrapper .burger {
-          background: url("/img/icons/burger-md.png") no-repeat;
+          background: url("../img/icons/burger-md.png") no-repeat;
           height: 40px;
           width: 40px; } }
       @media (min-width: 1180px) {
@@ -537,19 +537,19 @@ header {
     position: absolute;
     top: 26px;
     left: -11px;
-    background: url("/img/best-value.png") no-repeat;
+    background: url("../img/best-value.png") no-repeat;
     height: 36px;
     width: 88px; }
     @media (min-width: 768px) {
       .prices .best-value {
-        background: url("/img/best-value-2.png") no-repeat;
+        background: url("../img/best-value-2.png") no-repeat;
         height: 58px;
         width: 114px;
         left: -39px;
         top: 34px; } }
     @media (min-width: 1180px) {
       .prices .best-value {
-        background: url("/img/best-value-3.png") no-repeat;
+        background: url("../img/best-value-3.png") no-repeat;
         width: 156px;
         height: 80px;
         left: -52px;
@@ -613,7 +613,7 @@ header {
     border: 2px solid #0050ff;
     border-radius: 20px;
     padding: 10px 25px 10px 10px;
-    background: url("/img/icons/right-arrow.svg") no-repeat;
+    background: url("../img/icons/right-arrow.svg") no-repeat;
     background-size: 7px;
     background-position: 90% center; }
     @media (min-width: 768px) {
@@ -623,7 +623,7 @@ header {
     .button-wrapper a:hover {
       color: #081f3f;
       border: 2px solid #081f3f;
-      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background: url("../img/icons/hover-right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center; }
 
@@ -689,13 +689,13 @@ header {
       font-family: museosans700;
       font-size: 12px;
       color: #3149fb;
-      background: #ffffff url("/img/icons/right-arrow.svg") no-repeat;
+      background: #ffffff url("../img/icons/right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center;
       padding: 12px 40px 12px 20px;
       border-radius: 20px; }
       .user-story-wrapper .user-story .white-button:hover {
-        background: #e6eeff url("/img/icons/right-arrow.svg") no-repeat;
+        background: #e6eeff url("../img/icons/right-arrow.svg") no-repeat;
         background-size: 7px;
         background-position: 90% center; }
       @media (min-width: 768px) {
@@ -707,7 +707,7 @@ header {
           padding: 12px 47px 12px 20px; } }
   .user-story-wrapper .user-photo {
     width: 100%;
-    background: url("/img/story-photo.jpg") no-repeat;
+    background: url("../img/story-photo.jpg") no-repeat;
     background-size: cover;
     height: 230px; }
     @media (min-width: 768px) {
@@ -933,7 +933,7 @@ header {
         font-family: museosans700;
         font-size: 16px;
         color: #2dc27a;
-        background: #ffffff url(/img/icons/right-arrow-green.svg) no-repeat;
+        background: #ffffff url(../img/icons/right-arrow-green.svg) no-repeat;
         background-size: 7px;
         background-position: 90% center;
         padding: 12px 30px 12px 20px;
@@ -956,20 +956,20 @@ header {
         width: 27.95%;
         height: 230px; } }
   .album .first {
-    background: url("/img/photo-1.png") no-repeat;
+    background: url("../img/photo-1.png") no-repeat;
     background-size: cover;
     margin-right: 4px; }
     @media (min-width: 768px) {
       .album .first {
         left: 0; } }
   .album .second {
-    background: url("/img/photo-2.png") no-repeat;
+    background: url("../img/photo-2.png") no-repeat;
     background-size: cover; }
     @media (min-width: 768px) {
       .album .second {
         right: 0; } }
   .album .third {
-    background: url("/img/photo-3.png") no-repeat;
+    background: url("../img/photo-3.png") no-repeat;
     background-size: cover;
     margin-right: 4px; }
     @media (min-width: 768px) {
@@ -977,7 +977,7 @@ header {
         bottom: 0;
         left: 0; } }
   .album .forth {
-    background: url("/img/photo-4.png") no-repeat;
+    background: url("../img/photo-4.png") no-repeat;
     background-size: cover; }
     @media (min-width: 768px) {
       .album .forth {
@@ -1009,7 +1009,7 @@ header {
         font-size: 48px;
         margin: 39px 0 43px; } }
   .posts .post .post-img-1 {
-    background: url("/img/post-1.png") no-repeat center;
+    background: url("../img/post-1.png") no-repeat center;
     background-size: contain;
     width: 230px;
     height: 170px;
@@ -1046,7 +1046,7 @@ header {
         margin-right: 160px;
         margin-top: 55px; } }
   .posts .post .post-img-3 {
-    background: url("/img/post-3.png") no-repeat;
+    background: url("../img/post-3.png") no-repeat;
     background-size: contain;
     width: 225px;
     height: 170px;
@@ -1073,14 +1073,14 @@ header {
     border: 2px solid #0050ff;
     border-radius: 20px;
     padding: 10px 25px 10px 10px;
-    background: url("/img/icons/right-arrow.svg") no-repeat;
+    background: url("../img/icons/right-arrow.svg") no-repeat;
     background-size: 7px;
     background-position: 90% center;
     margin: 16px 0 40px; }
     .posts .post .button-blue:hover {
       color: #081f3f;
       border: 2px solid #081f3f;
-      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background: url("../img/icons/hover-right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center; }
     @media (min-width: 768px) {
@@ -1293,7 +1293,7 @@ header {
       border: 2px solid #0050ff;
       border-radius: 20px;
       padding: 10px 25px 10px 10px;
-      background: url("/img/icons/right-arrow.svg") no-repeat;
+      background: url("../img/icons/right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center;
       margin: 60px 0 85px;
@@ -1301,7 +1301,7 @@ header {
       .contact-form form .button-blue:hover {
         color: #081f3f;
         border: 2px solid #081f3f;
-        background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+        background: url("../img/icons/hover-right-arrow.svg") no-repeat;
         background-size: 7px;
         background-position: 90% center; }
       @media (min-width: 768px) {
@@ -1377,20 +1377,20 @@ header {
           .contact-form .info-mobile .card h3, .contact-form .info-col .card h3 {
             font-size: 18px; } }
       .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
-        background: url("/img/card-img.jpg") no-repeat center;
+        background: url("../img/card-img.jpg") no-repeat center;
         height: 55px;
         width: 55px;
         margin: auto;
         padding: 15px 0 15px; }
         @media (min-width: 768px) {
           .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
-            background: url("/img/card-img-medium.jpg") no-repeat center;
+            background: url("../img/card-img-medium.jpg") no-repeat center;
             height: 68px;
             width: 68px;
             padding: 22px 0; } }
         @media (min-width: 1180px) {
           .contact-form .info-mobile .card .card-img, .contact-form .info-col .card .card-img {
-            background: url("/img/card-img-large.jpg") no-repeat center;
+            background: url("../img/card-img-large.jpg") no-repeat center;
             height: 88px;
             width: 88px;
             padding: 24px 0; } }
@@ -1705,20 +1705,20 @@ footer {
             height: 19px;
             margin-right: 10px; } }
       footer .footer-2 .social-icons .icon-facebook {
-        background: url("/img/social-icons/facebook.png") no-repeat; }
+        background: url("../img/social-icons/facebook.png") no-repeat; }
         @media (min-width: 768px) {
           footer .footer-2 .social-icons .icon-facebook {
-            background: url("/img/social-icons/facebook-lg.png") no-repeat; } }
+            background: url("../img/social-icons/facebook-lg.png") no-repeat; } }
       footer .footer-2 .social-icons .icon-twitter {
-        background: url("/img/social-icons/twetter.png") no-repeat; }
+        background: url("../img/social-icons/twetter.png") no-repeat; }
         @media (min-width: 768px) {
           footer .footer-2 .social-icons .icon-twitter {
-            background: url("/img/social-icons/twetter-lg.png") no-repeat; } }
+            background: url("../img/social-icons/twetter-lg.png") no-repeat; } }
       footer .footer-2 .social-icons .icon-youtube {
-        background: url("/img/social-icons/youtube.png") no-repeat; }
+        background: url("../img/social-icons/youtube.png") no-repeat; }
         @media (min-width: 768px) {
           footer .footer-2 .social-icons .icon-youtube {
-            background: url("/img/social-icons/youtube-lg.png") no-repeat;
+            background: url("../img/social-icons/youtube-lg.png") no-repeat;
             margin-right: 0; } }
 
 body {

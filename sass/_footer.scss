@@ -233,21 +233,21 @@ footer {
         }
       }
       .icon-facebook {
-        background: url("/img/social-icons/facebook.png") no-repeat;
+        background: url("../img/social-icons/facebook.png") no-repeat;
         @include breakpoint($br-medium) {
-          background: url("/img/social-icons/facebook-lg.png") no-repeat;
+          background: url("../img/social-icons/facebook-lg.png") no-repeat;
         }
       }
       .icon-twitter {
-        background: url("/img/social-icons/twetter.png") no-repeat;
+        background: url("../img/social-icons/twetter.png") no-repeat;
         @include breakpoint($br-medium) {
-          background: url("/img/social-icons/twetter-lg.png") no-repeat;
+          background: url("../img/social-icons/twetter-lg.png") no-repeat;
         }
       }
       .icon-youtube {
-        background: url("/img/social-icons/youtube.png") no-repeat;
+        background: url("../img/social-icons/youtube.png") no-repeat;
         @include breakpoint($br-medium) {
-          background: url("/img/social-icons/youtube-lg.png") no-repeat;
+          background: url("../img/social-icons/youtube-lg.png") no-repeat;
           margin-right: 0;
         }
       }

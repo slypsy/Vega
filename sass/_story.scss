@@ -65,13 +65,13 @@
       font-family: museosans700;
       font-size: 12px;
       color: $blue-ribbon-darker;
-      background: $white url("/img/icons/right-arrow.svg") no-repeat;
+      background: $white url("../img/icons/right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center;
       padding: 12px 40px 12px 20px;
       border-radius: 20px;
       &:hover {
-        background: #e6eeff url("/img/icons/right-arrow.svg") no-repeat;
+        background: #e6eeff url("../img/icons/right-arrow.svg") no-repeat;
         background-size: 7px;
         background-position: 90% center;
       }
@@ -86,7 +86,7 @@
   }
   .user-photo {
     width: 100%;
-    background: url("/img/story-photo.jpg") no-repeat;
+    background: url("../img/story-photo.jpg") no-repeat;
     background-size: cover;
     height: 230px;
     @include breakpoint($br-medium) {

@@ -69,18 +69,18 @@
     position: absolute;
     top: 26px;
     left: -11px;
-    background: url("/img/best-value.png") no-repeat;
+    background: url("../img/best-value.png") no-repeat;
     height: 36px;
     width: 88px;
     @include breakpoint($br-medium) {
-      background: url("/img/best-value-2.png") no-repeat;
+      background: url("../img/best-value-2.png") no-repeat;
       height: 58px;
       width: 114px;
       left: -39px;
       top: 34px;
     }
     @include breakpoint($br-large) {
-      background: url("/img/best-value-3.png") no-repeat;
+      background: url("../img/best-value-3.png") no-repeat;
       width: 156px;
       height: 80px;
       left: -52px;
@@ -154,7 +154,7 @@
     border: 2px solid $blue-ribbon;
     border-radius: 20px;
     padding: 10px 25px 10px 10px;
-    background: url("/img/icons/right-arrow.svg") no-repeat;
+    background: url("../img/icons/right-arrow.svg") no-repeat;
     background-size: 7px;
     background-position: 90% center;
     @include breakpoint($br-medium) {
@@ -164,7 +164,7 @@
     &:hover {
       color: $downriver;
       border:  2px solid $downriver;
-      background: url("/img/icons/hover-right-arrow.svg") no-repeat;
+      background: url("../img/icons/hover-right-arrow.svg") no-repeat;
       background-size: 7px;
       background-position: 90% center;
     }
