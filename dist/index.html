@@ -12,11 +12,47 @@
 <body>
 <nav id="menu">
     <header>
-        <h2>Menu</h2>
+        <div class="user-type-nav-slide">
+            <a href="#">Patients</a>
+            <a href="#">Clinicians</a>
+            <a href="#">Business</a>
+        </div>
+        <nav class="nav-slide">
+            <ul>
+                <li>
+                    <a class="active" href="#">
+                        What we do
+                        <div class="hover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About
+                        <div class="hover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Pricing
+                        <div class="hover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                        <div class="hover"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="register-slide">
+            <a class="btn btn-log" href="">Log in</a>
+            <a class="btn btn-sign" href="">Sign up</a>
+        </div>
     </header>
 </nav>
 <main id="panel">
-        <div class="header-width">
+    <div class="header-width">
     <div class="container">
         <header>
             <div class="user-type-nav">
@@ -27,7 +63,7 @@
             <div class="logo">
                 <img src="../img/logo.png" alt=""/>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li>
                         <a class="active" href="#">
@@ -65,502 +101,502 @@
         </header>
     </div>
 </div>
-        <section class="presentation">
-            <div class="text">
-                <img class="family" src="../img/icons/family.png" alt="">
-                <img class="family-mob" src="../img/icons/family-mob.png" alt=""/>
-                <h1>Sed ut perspiciatis unde omnis iste nat</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+    <section class="presentation">
+    <div class="text">
+        <img class="family" src="../img/icons/family.png" alt="">
+        <img class="family-mob" src="../img/icons/family-mob.png" alt=""/>
+        <h1>Sed ut perspiciatis unde omnis iste nat</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+    </div>
+    <div class="focuspoint"
+         data-focus-x="0"
+         data-focus-y="0"
+         data-image-w="1639"
+         data-image-h="740">
+        <img src="../img/header-photo.jpg" alt=""/>
+    </div>
+</section>
+    <section class="features">
+    <div class="container">
+        <div class="column column-1-4">
+            <img src="../img/icons/icon-1.svg"/>
+            <p>Lorem ipsum dolor sit amet
+                consectetuer adipiscing
+            </p>
+        </div>
+        <div class="column column-2-4">
+            <img src="../img/icons/icon-2.svg"/>
+            <p>Lorem ipsum dolor sit amet
+                consectetuer adipiscing
+            </p>
+        </div>
+        <div class="column column-3-4">
+            <img src="../img/icons/icon-3.svg"/>
+            <p>Lorem ipsum dolor sit amet
+                consectetuer adipiscing
+            </p>
+        </div>
+        <div class="column column-4-4">
+            <img src="../img/icons/icon-4.svg"/>
+            <p>Lorem ipsum dolor sit amet
+                consectetuer adipiscing
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="pricing">
+    <div class="container">
+        <ul class="nav-tabs clearfix">
+            <li class="tab"><a class="active" href="#lorem-plans">Lorem plans</a></li>
+            <li class="tab"><a href="#ipsum-plans">Ipsum plans</a></li>
+        </ul>
+        <div class="tabs">
+            <div class="tab-content active" id="lorem-plans">
+                <div class="prices first">
+                    <p class="plan">Montly plan</p>
+                    <table>
+                        <tr>
+                            <td class="pound">&pound18</td>
+                            <td class="month">per<br>month</td>
+                        </tr>
+                    </table>
+                    <p>Minumum 4 months</p>
+                    <ul>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
+                        </li>
+                    </ul>
+                </div>
+                <div class="prices best">
+                    <p class="plan">Annual plan</p>
+                    <div class="best-value"></div>
+                    <p class="price"><span>&pound180</span></p>
+                    <p>Save £36 per year</p>
+                    <ul>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
+                        </li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Discounts for family members</li>
+                    </ul>
+                </div>
+                <div class="prices last">
+                    <p class="plan">Pay as you go</p>
+                    <p class="price"><span>&pound75</span></p>
+                    <p>Per appointment</p>
+                    <ul>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Unlimited online appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Health tracking</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Online health assessments</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">2 free international
+                            appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="focuspoint"
-                 data-focus-x="0"
-                 data-focus-y="0"
-                 data-image-w="1639"
-                 data-image-h="740">
-                <img src="../img/header-photo.jpg" alt=""/>
+            <div class="tab-content" id="ipsum-plans">
+                <div class="prices first">
+                    <p class="plan">Montly plan</p>
+                    <table>
+                        <tr>
+                            <td class="pound">&pound18</td>
+                            <td class="month">per<br>month</td>
+                        </tr>
+                    </table>
+                    <p>Minumum 4 months</p>
+                    <ul>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
+                        </li>
+                    </ul>
+                </div>
+                <div class="prices best">
+                    <p class="plan">Annual plan</p>
+                    <div class="best-value"></div>
+                    <p class="price"><span>&pound180</span></p>
+                    <p>Save £36 per year</p>
+                    <ul>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
+                        </li>
+                        <li class="checked"><img src="../img/icons/check.svg" alt="">Discounts for family members</li>
+                    </ul>
+                </div>
+                <div class="prices last">
+                    <p class="plan">Pay as you go</p>
+                    <p class="price"><span>&pound75</span></p>
+                    <p>Per appointment</p>
+                    <ul>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Unlimited online appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Health tracking</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">NHS repeat prescriptions</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Online health assessments</li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">2 free international
+                            appointments
+                        </li>
+                        <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section class="features">
-            <div class="container">
-                <div class="column column-1-4">
-                    <img src="../img/icons/icon-1.svg"/>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetuer adipiscing
-                    </p>
-                </div>
-                <div class="column column-2-4">
-                    <img src="../img/icons/icon-2.svg"/>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetuer adipiscing
-                    </p>
-                </div>
-                <div class="column column-3-4">
-                    <img src="../img/icons/icon-3.svg"/>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetuer adipiscing
-                    </p>
-                </div>
-                <div class="column column-4-4">
-                    <img src="../img/icons/icon-4.svg"/>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetuer adipiscing
-                    </p>
+        </div>
+        <div class="button-wrapper">
+            <a href="#">Sign up now</a>
+        </div>
+    </div>
+</section>
+    <section class="user-story-wrapper clearfix">
+    <div class="user-story">
+        <div class="container">
+            <div class="wrapper-table">
+                <div class="wrapper-cell">
+                    <h4>users’s story</h4>
+                    <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy”</p>
+                    <a class="white-button" href="#">Read user’s story</a>
                 </div>
             </div>
-        </section>
-        <section class="pricing">
-            <div class="container">
-                <ul class="nav-tabs clearfix">
-                    <li class="tab"><a class="active" href="#lorem-plans">Lorem plans</a></li>
-                    <li class="tab"><a href="#ipsum-plans">Ipsum plans</a></li>
+        </div>
+    </div>
+    <div class="user-photo"></div>
+</section>
+    <section class="accordion-with">
+    <div class="container max-width">
+        <p class="notes">Lorem ipsum notes</p>
+        <div id="accordion">
+            <h3 class="accordion-button">Who can use the service?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
                 </ul>
-                <div class="tabs">
-                    <div class="tab-content active" id="lorem-plans">
-                        <div class="prices first">
-                            <p class="plan">Montly plan</p>
-                            <table>
-                                <tr>
-                                    <td class="pound">&pound18</td>
-                                    <td class="month">per<br>month</td>
-                                </tr>
-                            </table>
-                            <p>Minumum 4 months</p>
-                            <ul>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="prices best">
-                            <p class="plan">Annual plan</p>
-                            <div class="best-value"></div>
-                            <p class="price"><span>&pound180</span></p>
-                            <p>Save £36 per year</p>
-                            <ul>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
-                                </li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Discounts for family members</li>
-                            </ul>
-                        </div>
-                        <div class="prices last">
-                            <p class="plan">Pay as you go</p>
-                            <p class="price"><span>&pound75</span></p>
-                            <p>Per appointment</p>
-                            <ul>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Unlimited online appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Health tracking</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Online health assessments</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">2 free international
-                                    appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tab-content" id="ipsum-plans">
-                        <div class="prices first">
-                            <p class="plan">Montly plan</p>
-                            <table>
-                                <tr>
-                                    <td class="pound">&pound18</td>
-                                    <td class="month">per<br>month</td>
-                                </tr>
-                            </table>
-                            <p>Minumum 4 months</p>
-                            <ul>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="prices best">
-                            <p class="plan">Annual plan</p>
-                            <div class="best-value"></div>
-                            <p class="price"><span>&pound180</span></p>
-                            <p>Save £36 per year</p>
-                            <ul>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Unlimited online appointments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Health tracking</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Online health assessments</li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">2 free international appointments
-                                </li>
-                                <li class="checked"><img src="../img/icons/check.svg" alt="">Discounts for family members</li>
-                            </ul>
-                        </div>
-                        <div class="prices last">
-                            <p class="plan">Pay as you go</p>
-                            <p class="price"><span>&pound75</span></p>
-                            <p>Per appointment</p>
-                            <ul>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Unlimited online appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Health tracking</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">NHS repeat prescriptions</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Online health assessments</li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">2 free international
-                                    appointments
-                                </li>
-                                <li class="unchecked"><img src="../img/icons/uncheck.svg" alt="">Discounts for family members
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="button-wrapper">
-                    <a href="#">Sign up now</a>
-                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo.
+                </p>
             </div>
-        </section>
-        <section class="user-story-wrapper clearfix">
-            <div class="user-story">
-                <div class="container">
-                    <div class="wrapper-table">
-                        <div class="wrapper-cell">
-                            <h4>users’s story</h4>
-                            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy”</p>
-                            <a class="white-button" href="#">Read user’s story</a>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="accordion-button">How do the appointments work?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo.
+                </p>
             </div>
-            <div class="user-photo"></div>
-        </section>
-        <section class="accordion-with">
-            <div class="container max-width">
-                <p class="notes">Lorem ipsum notes</p>
-                <div id="accordion">
-                    <h3 class="accordion-button">Who can use the service?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
-                        </p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo.
-                        </p>
-                    </div>
-                    <h3 class="accordion-button">How do the appointments work?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
-                        </p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo.
-                        </p>
-                    </div>
-                    <h3 class="accordion-button">How much does it cost?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
-                        </p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo.
-                        </p>
-                    </div>
-                    <h3 class="accordion-button">What conditions do you treat?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
-                        </p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
-                            Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
-                            Mauris ligula ex, mattis id purus a, blandit aliquam justo.
-                        </p>
-                    </div>
-                </div>
-                <div class="button-wrapper btn-blue">
-                    <a href="">Lorem ipsum notes</a>
-                </div>
+            <h3 class="accordion-button">How much does it cost?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo.
+                </p>
             </div>
-        </section>
-        <section class="album">
-            <div class="container max-width">
-                <div class="wrapper-table">
-                    <div class="wrapper-cell">
-                        <img src="../img/icons/icon-5.svg" alt=""/>
-                        <h1>Title</h1>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod
-                            tincidunt ut laoreet.
-                        </p>
-                        <a class="white-button" href="#">Read more</a>
+            <h3 class="accordion-button">What conditions do you treat?<span class="arrow"><img src="../img/icons/accordion-arrow.svg"></span></h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula.
+                    Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor.
+                    Mauris ligula ex, mattis id purus a, blandit aliquam justo.
+                </p>
+            </div>
+        </div>
+        <div class="button-wrapper btn-blue">
+            <a href="">Lorem ipsum notes</a>
+        </div>
+    </div>
+</section>
+    <section class="album">
+    <div class="container max-width">
+        <div class="wrapper-table">
+            <div class="wrapper-cell">
+                <img src="../img/icons/icon-5.svg" alt=""/>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod
+                    tincidunt ut laoreet.
+                </p>
+                <a class="white-button" href="#">Read more</a>
+            </div>
+        </div>
+        <div class="album-photo first"></div>
+        <div class="album-photo second"></div>
+        <div class="album-photo third"></div>
+        <div class="album-photo forth"></div>
+    </div>
+</section>
+    <section class="posts">
+    <hr>
+    <div class="container">
+        <div class="post left">
+            <h1>Our vision</h1>
+            <img class="post-img-1" src="../img/post-1.png" alt=""/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="post right">
+            <h1>Post title</h1>
+            <img class="post-img-2" src="../img/post-2.png" alt=""/>
+            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="post left">
+            <h1>Post title</h1>
+            <img class="post-img-3" src="../img/post-3.png" alt=""/>
+            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+            </p>
+            <a class="button-blue" href="">Read more</a>
+        </div>
+    </div>
+    <hr>
+</section>
+    <section class="contact-form">
+    <h1>Contact form</h1>
+    <div class="container" style="overflow: hidden">
+        <div class="form-col">
+            <form>
+                <div class="form-container">
+                    <div class="column-1-2">
+                        <label for="name">Your name</label>
+                        <input id="name" type="text">
                     </div>
-                </div>
-                <div class="album-photo first"></div>
-                <div class="album-photo second"></div>
-                <div class="album-photo third"></div>
-                <div class="album-photo forth"></div>
-            </div>
-        </section>
-        <section class="posts">
-            <hr>
-            <div class="container">
-                <div class="post left">
-                    <h1>Our vision</h1>
-                    <img class="post-img-1" src="../img/post-1.png" alt=""/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a class="button-blue" href="">Read more</a>
-                </div>
-            </div>
-            <hr>
-            <div class="container">
-                <div class="post right">
-                    <h1>Post title</h1>
-                    <img class="post-img-2" src="../img/post-2.png" alt=""/>
-                    <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-                    </p>
-                    <a class="button-blue" href="">Read more</a>
-                </div>
-            </div>
-            <hr>
-            <div class="container">
-                <div class="post left">
-                    <h1>Post title</h1>
-                    <img class="post-img-3" src="../img/post-3.png" alt=""/>
-                    <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-                    </p>
-                    <a class="button-blue" href="">Read more</a>
-                </div>
-            </div>
-            <hr>
-        </section>
-        <section class="contact-form">
-            <h1>Contact form</h1>
-            <div class="container" style="overflow: hidden">
-                <div class="form-col">
-                    <form>
-                        <div class="form-container">
-                            <div class="column-1-2">
-                                <label for="name">Your name</label>
-                                <input id="name" type="text">
-                            </div>
-                            <div class="column-2-2">
-                                <label for="number">Number</label>
-                                <input id="number" type="number">
-                            </div>
-                            <div class="column">
-                                <div class="email">
-                                    <label for="email">Email address</label>
-                                    <input id="email" type="email">
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="message">
-                                    <label for="message">Your message</label>
-                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="accept">
-                                    <label>Accept terms</label>
-                                    <label class="terms" for="c-box"><input type="checkbox" id="c-box">I accept the terms</label><br>
-                                </div>
-                                <a class="button-blue" href="">Send message</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="info-col">
-                    <h1>Need more info?</h1>
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolor.
-                    </p>
-                    <div class="card">
-                        <h2>John Johnson</h2>
-                        <h3>CTO</h3>
-                        <div class="card-img"></div>
-                        <a href="tel:+38124546785">024 546 785</a>
-                        <a href="mailto:johnjohnson@example.com">johnjohnson@example.com</a>
+                    <div class="column-2-2">
+                        <label for="number">Number</label>
+                        <input id="number" type="number">
                     </div>
-                </div>
-            </div>
-            <div class="info-mobile">
-                <div class="container">
-                    <h1>Need more info?</h1>
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolor.
-                    </p>
-                    <div class="card">
-                        <h2>John Johnson</h2>
-                        <h3>CTO</h3>
-                        <div class="card-img"></div>
-                        <a href="tel:+38124546785">024 546 785</a>
-                        <a href="mailto:johnjohnson@example.com">johnjohnson@example.com</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bot-nav">
-            <div class="prev">
-                <a href="#"><img src="../img/arrow-prev.png" alt="">Previous</a>
-            </div>
-            <div class="current">
-                <a href="#">Home</a>
-            </div>
-            <div class="next">
-                <a href="#">Next<img src="../img/arrow-next.png" alt=""></a>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="footer-container">
-                    <div class="logo">
-                        <img src="../img/logo.png" alt=""/>
-                    </div>
-                    <div class="list-1">
-                        <h4>Our sites</h4>
-                        <ul>
-                            <li><a href="#">Patients</a></li>
-                            <li><a href="#">Clinicians</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Pharmacists</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-2">
-                        <h4>The service</h4>
-                        <ul>
-                            <li><a href="#">What we do</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-3">
-                        <h4>Useful links</h4>
-                        <ul>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">User stories</a></li>
-                            <li><a href="#">Mobile apps</a></li>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="#">International</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-4">
-                        <div class="register-bottom">
-                            <a class="btn btn-log" href="">Log in</a>
-                            <a class="btn btn-sign" href="">Sign up</a>
-                        </div>
-                        <div class="apps">
-                            <img src="../img/app-store-lg.png" alt="">
-                            <img src="../img/google-play-lg.png" alt="">
-                        </div>
-                        <div class="apps-medium">
-                            <img src="../img/app-store-md.png" alt="">
-                            <img src="../img/google-play-md.png" alt="">
+                    <div class="column">
+                        <div class="email">
+                            <label for="email">Email address</label>
+                            <input id="email" type="email">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="footer-2">
-                <div class="container">
-                    <a href="">Terms</a>
-                    <span>+</span>
-                    <a href="">Privacy</a>
-                    <div class="social-icons">
-                        <div class="icon-facebook"></div>
-                        <div class="icon-twitter"></div>
-                        <div class="icon-youtube"></div>
+                    <div class="column">
+                        <div class="message">
+                            <label for="message">Your message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="accept">
+                            <label>Accept terms</label>
+                            <label class="terms" for="c-box"><input type="checkbox" id="c-box">I accept the terms</label><br>
+                        </div>
+                        <a class="button-blue" href="">Send message</a>
                     </div>
                 </div>
+            </form>
+        </div>
+        <div class="info-col">
+            <h1>Need more info?</h1>
+            <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolor.
+            </p>
+            <div class="card">
+                <h2>John Johnson</h2>
+                <h3>CTO</h3>
+                <div class="card-img"></div>
+                <a href="tel:+38124546785">024 546 785</a>
+                <a href="mailto:johnjohnson@example.com">johnjohnson@example.com</a>
             </div>
-        </footer>
-        <script src="/js/jquery-2.2.4.min.js"></script>
-        <script src="vendor/jquery-focuspoint-master/js/jquery.focuspoint.min.js"></script>
-        <script src="/js/slideout.min.js"></script>
-        <script>
-            $(function () {
-                $('.focuspoint').focusPoint();
-                $('.nav-tabs .tab').click(function () {
-                    $('.nav-tabs a').removeClass('active');
-                    $('.tabs .tab-content').removeClass('active');
-                    $(this).find(' > a').addClass('active');
-                    $($(this).find(' > a').attr('href')).addClass('active');
-                });
+        </div>
+    </div>
+    <div class="info-mobile">
+        <div class="container">
+            <h1>Need more info?</h1>
+            <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolor.
+            </p>
+            <div class="card">
+                <h2>John Johnson</h2>
+                <h3>CTO</h3>
+                <div class="card-img"></div>
+                <a href="tel:+38124546785">024 546 785</a>
+                <a href="mailto:johnjohnson@example.com">johnjohnson@example.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="bot-nav">
+        <div class="prev">
+            <a href="#"><img src="../img/arrow-prev.png" alt="">Previous</a>
+        </div>
+        <div class="current">
+            <a href="#">Home</a>
+        </div>
+        <div class="next">
+            <a href="#">Next<img src="../img/arrow-next.png" alt=""></a>
+        </div>
+    </section>
+    <footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="../img/logo.png" alt=""/>
+            </div>
+            <div class="list-1">
+                <h4>Our sites</h4>
+                <ul>
+                    <li class="active"><a href="#">Patients</a></li>
+                    <li><a href="#">Clinicians</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Pharmacists</a></li>
+                </ul>
+            </div>
+            <div class="list-2">
+                <h4>The service</h4>
+                <ul>
+                    <li class="active"><a href="#">What we do</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="list-3">
+                <h4>Useful links</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">User stories</a></li>
+                    <li><a href="#">Mobile apps</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">International</a></li>
+                </ul>
+            </div>
+            <div class="list-4">
+                <div class="register-bottom">
+                    <a class="btn btn-log" href="">Log in</a>
+                    <a class="btn btn-sign" href="">Sign up</a>
+                </div>
+                <div class="apps">
+                    <img src="../img/app-store-lg.png" alt="">
+                    <img src="../img/google-play-lg.png" alt="">
+                </div>
+                <div class="apps-medium">
+                    <img src="../img/app-store-md.png" alt="">
+                    <img src="../img/google-play-md.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <div class="container">
+            <a href="">Terms</a>
+            <span>+</span>
+            <a href="">Privacy</a>
+            <div class="social-icons">
+                <div class="icon-facebook"></div>
+                <div class="icon-twitter"></div>
+                <div class="icon-youtube"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="/js/jquery-2.2.4.min.js"></script>
+    <script src="vendor/jquery-focuspoint-master/js/jquery.focuspoint.min.js"></script>
+    <script src="/js/slideout.min.js"></script>
+    <script>
+        $(function () {
+            $('.focuspoint').focusPoint();
+            $('.nav-tabs .tab').click(function () {
+                $('.nav-tabs a').removeClass('active');
+                $('.tabs .tab-content').removeClass('active');
+                $(this).find(' > a').addClass('active');
+                $($(this).find(' > a').attr('href')).addClass('active');
+            });
 
-                var accordionElements = $('.accordion-button');
-                accordionElements.click(function() {
-                    var el = $(this);
-                    var elOpened = el.hasClass('active');
-                    accordionElements.each(function () {
-                        $(this).removeClass('active');
-                        $(this).next().slideUp();
-                        $(this).find('.arrow').css('transform', 'rotate(0deg)')
-                    });
-                    if (!elOpened) {
-                        el.addClass('active');
-                        el.find('.arrow').css('transform', 'rotate(180deg)');
-                        el.next().slideDown(700);
-                    }
+            var accordionElements = $('.accordion-button');
+            accordionElements.click(function () {
+                var el = $(this);
+                var elOpened = el.hasClass('active');
+                accordionElements.each(function () {
+                    $(this).removeClass('active');
+                    $(this).next().slideUp();
+                    $(this).find('.arrow').css('transform', 'rotate(0deg)')
                 });
-                var slideout = new Slideout({
-                    'panel': document.getElementById('panel'),
-                    'menu': document.getElementById('menu'),
-                    'padding': 256,
-                    'tolerance': 70,
-                    'side': 'right'
-                });
-                document.querySelector('div.burger').addEventListener('click', function() {
-                    slideout.toggle();
-                });
-            })
-        </script>
-    </main>
+                if (!elOpened) {
+                    el.addClass('active');
+                    el.find('.arrow').css('transform', 'rotate(180deg)');
+                    el.next().slideDown(700);
+                }
+            });
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 256,
+                'tolerance': 70,
+                'side': 'right'
+            });
+            document.querySelector('div.burger').addEventListener('click', function () {
+                slideout.toggle();
+            });
+        })
+    </script>
+</main>
 </body>
 </html>

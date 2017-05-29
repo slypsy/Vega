@@ -5,7 +5,7 @@
           columns: 12,
           gutters: 0,
           global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-          debug: (image: show)
+          debug: (image: hide)
   )){
     @include container();
     .prev {

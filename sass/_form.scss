@@ -51,7 +51,7 @@
               gutters: 20px/250px,
               gutter-position: after,
               global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-              debug: (image: show)
+              debug: (image: hide)
       )){
         @include container();
         .column-1-2 {

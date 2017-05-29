@@ -26,6 +26,16 @@ footer {
         padding-bottom: 16px;
       }
     }
+    .active {
+      @include breakpoint($br-large) {
+        list-style: circle;
+      }
+      a{
+        @include breakpoint($br-large) {
+          color: $downriver;
+        }
+      }
+    }
     a {
       text-decoration: none;
       font-family: museosans500, sans-serif;
@@ -57,7 +67,6 @@ footer {
       @include breakpoint($br-large) {
         display: block;
         @include span(2 of 12);
-        @include push(3);
       }
     }
     .list-2 {

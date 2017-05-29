@@ -1,5 +1,83 @@
-.header-width{
+#menu {
+  height: 100%;
+  background-color: $downriver;
+  .user-type-nav-slide {
+    padding-left: 30px;
+    line-height: 60px;
+    border-bottom: 1px solid #4f5c74;
+    a {
+      text-decoration: none;
+      color: #4f5c74;
+      font-family: museosans700, sans-serif;
+      font-size: 14px;
+      line-height: 61px;
+      display: inline-block;
+      border-bottom: 2px solid $downriver;
+      padding-right: 10px;
+      &:last-child {
+        padding-right: 0;
+      }
+      &:hover {
+        color: $white;
+        border-bottom: 2px solid $blue-ribbon;
+      }
+    }
+  }
+  .nav-slide {
+    padding-left: 30px;
+    padding-top: 37px;
+    display: block;
+    ul {
+      li {
+        display: block;
+        padding-bottom: 32px;
+        a {
+          color: $white;
+          text-decoration: none;
+          font-family: museosans700, sans-serif;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .register-slide {
+    padding-left: 30px;
+    display: block;
+    @include breakpoint($br-large) {
+      display: none;
+    }
+    .btn {
+      background-color: $blue-ribbon;
+      height: 40px;
+      width: 80px;
+      display: inline-block;
+      text-decoration: none;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-family: museosans700;
+      font-size: 13px;
+      &:hover {
+        background-color: $science-blue;
+      }
+    }
+    .btn-log{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .btn-sign{
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+}
+.header-width {
   width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  @include breakpoint($br-medium) {
+    border-bottom: none;
+  }
 }
 header{
   height: 63px;
@@ -53,7 +131,7 @@ header{
       }
     }
   }
-  nav {
+  .main-nav {
     display: none;
     @include breakpoint($br-large) {
       top: 50%;
@@ -98,15 +176,17 @@ header{
     text-align: end;
     line-height: 63px;
     display: inline;
-    padding-right: 42px;
+    margin-left: 38px;
     @include breakpoint($br-medium) {
       line-height: 80px;
       top: 0;
-      padding-right: 70px;
+      margin-left: 323px;
     }
     @include breakpoint($br-large) {
       line-height: 0;
       top: 50%;
+      margin: 0;
+      right: 0;
     }
     .btn {
       font-family: museosans700;
