@@ -9,21 +9,12 @@
     padding: 0;
     border-bottom: none;
   }
-  .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-  }
 }
 .column {
   text-align: left;
   @include breakpoint($br-medium) {
     text-align: center;
     color: $downriver;
-
-
   }
   @include breakpoint($br-large) {
     text-align: center;
@@ -45,7 +36,6 @@
       line-height: 30px;
     }
   }
-
   img {
     float: left;
     width: 34px;
