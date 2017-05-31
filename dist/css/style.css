@@ -368,6 +368,12 @@ header {
     .features {
       padding: 0;
       border-bottom: none; } }
+  .features .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
 
 .column {
   text-align: left; }
@@ -429,6 +435,12 @@ header {
       .pricing .container {
         position: relative;
         top: -92px; } }
+  .pricing .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
 
 .nav-tabs .tab {
   display: block;
@@ -1475,6 +1487,12 @@ header {
     margin-right: 20px; }
   .bot-nav .next a img {
     margin-left: 20px; }
+  .bot-nav .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
 
 footer {
   background-color: #f7f7f7; }
